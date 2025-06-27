@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7338092b-e6f4-4704-8dcc-7b56c5b9cbe0">
+  <producedTypes>
+    <objectType typeId="ef7a59a2-4ece-492c-8384-2ce9007f2214" valueTypeId="66b8015a-589c-4316-8418-b43c99ba35ae"/>
+    <managerType typeId="208216f0-4848-4581-beac-2097e666972c" valueTypeId="b5c53554-8a6d-494f-9f5f-bcc1e564ed74"/>
+  </producedTypes>
+  <name>ЗагрузкаОтчетаБанкаПоСБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка отчета банка по СБП</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Import FPS bank report</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаОтчетаБанкаПоСБП.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="268153b6-05cc-4ea1-98c4-097df43ebbd5">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата нач</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="58fe532d-feb6-4ea0-9ee0-9544de39e423">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата кон</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a7dce810-116c-47e7-82d0-903ab513b27e">
+    <name>ДоговорПодключенияКПлатежнойСистеме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор подключения к платежной системе</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Payment system contract</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыЭквайринга</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f5fa9972-f535-4b41-b1f7-799c9c42e5fa">
+    <name>НастройкаПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка подключения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Connection settings</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НастройкиПодключенияКСистемеБыстрыхПлатежей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6d63b9df-0fe1-46c3-bd74-87dd451da646">
+    <name>ПроводитьДокументыПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документы при загрузке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Post documents on import</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="67c99b30-1f0b-46aa-9388-055df66bd8f0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

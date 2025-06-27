@@ -1,0 +1,3508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>Страницы</name>
+    <id>134</id>
+    <items xsi:type="form:FormGroup">
+      <name>ВыплатаЗарплаты</name>
+      <id>138</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаДатаЗарплаты</name>
+        <id>26</id>
+        <items xsi:type="form:FormField">
+          <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуВПоследнийДеньМесяца</name>
+          <id>106</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ВыплачиватьЗарплатуВПоследнийДеньМесяца</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуВПоследнийДеньМесяцаПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуВПоследнийДеньМесяцаРасширеннаяПодсказка</name>
+            <id>108</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуВПоследнийДеньМесяцаКонтекстноеМеню</name>
+            <id>107</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <columnsCount>1</columnsCount>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>в последний день текущего месяца</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>on the last day of the current month</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>1</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаДатаЗарплатыНеПозжеЧем</name>
+          <id>109</id>
+          <items xsi:type="form:FormField">
+            <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуНеВПоследнийДеньМесяца</name>
+            <id>98</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ВыплачиватьЗарплатуВПоследнийДеньМесяца</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуНеВПоследнийДеньМесяцаПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуНеВПоследнийДеньМесяцаРасширеннаяПодсказка</name>
+              <id>100</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НастройкиЗарплатаКадрыРасширеннаяВыплачиватьЗарплатуНеВПоследнийДеньМесяцаКонтекстноеМеню</name>
+              <id>99</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <columnsCount>1</columnsCount>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>в начале следующего месяца</value>
+                </presentation>
+                <presentation>
+                  <key>en</key>
+                  <value>at the beginning of the next month</value>
+                </presentation>
+                <value xsi:type="core:NumberValue">
+                  <value>0</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ДатаВыплатыЗарплатыНеПозжеЧем</name>
+            <id>28</id>
+            <title>
+              <key>ru</key>
+              <value>Зарплата выплачивается не позже</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Salary is paid not later than</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>НастройкиЗарплатаКадрыРасширенная.ДатаВыплатыЗарплатыНеПозжеЧем</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <extendedTooltip>
+              <name>ДатаВыплатыЗарплатыНеПозжеЧемРасширеннаяПодсказка</name>
+              <id>30</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДатаВыплатыЗарплатыНеПозжеЧемКонтекстноеМеню</name>
+              <id>29</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>ДекорацияДатаЗарплатыНеПозжеЧем</name>
+            <id>111</id>
+            <title>
+              <key>ru</key>
+              <value>числа</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>number</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ДекорацияДатаЗарплатыНеПозжеЧемРасширеннаяПодсказка</name>
+              <id>113</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДекорацияДатаЗарплатыНеПозжеЧемКонтекстноеМеню</name>
+              <id>112</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Дата зарплаты не позже чем</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Salary payment date not later than</value>
+          </title>
+          <extendedTooltip>
+            <name>ГруппаДатаЗарплатыНеПозжеЧемРасширеннаяПодсказка</name>
+            <id>110</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Дата выплаты зарплаты</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Salary payment date</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаДатаЗарплатыРасширеннаяПодсказка</name>
+          <id>27</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаДатаАванса</name>
+        <id>34</id>
+        <items xsi:type="form:FormField">
+          <name>ДатаВыплатыАвансаНеПозжеЧем</name>
+          <id>36</id>
+          <title>
+            <key>ru</key>
+            <value>Дата выплаты аванса</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Advance date</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>НастройкиЗарплатаКадрыРасширенная.ДатаВыплатыАвансаНеПозжеЧем</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ДатаВыплатыАвансаНеПозжеЧемРасширеннаяПодсказка</name>
+            <id>38</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДатаВыплатыАвансаНеПозжеЧемКонтекстноеМеню</name>
+            <id>37</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Дата аванса</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Advance date</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаДатаАвансаРасширеннаяПодсказка</name>
+          <id>35</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>МестоВыплатыЗарплатыГруппа</name>
+        <id>42</id>
+        <items xsi:type="form:FormGroup">
+          <name>ВидыМестВыплатыЗарплаты</name>
+          <id>44</id>
+          <items xsi:type="form:FormField">
+            <name>ВидМестаВыплатыЗарплаты</name>
+            <id>46</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>МестоВыплатыЗарплатыОрганизации.Вид</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ВидМестаВыплатыЗарплатыПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ВидМестаВыплатыЗарплатыРасширеннаяПодсказка</name>
+              <id>48</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ВидМестаВыплатыЗарплатыКонтекстноеМеню</name>
+              <id>47</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <columnsCount>1</columnsCount>
+              <choiceList>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ВидыМестВыплатыЗарплаты.EnumValue.Касса</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ВидыМестВыплатыЗарплаты.EnumValue.ЗарплатныйПроект</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Виды мест выплаты зарплаты</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Salary payment place kinds</value>
+          </title>
+          <extendedTooltip>
+            <name>ВидыМестВыплатыЗарплатыРасширеннаяПодсказка</name>
+            <id>45</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>МестаВыплатыЗарплаты</name>
+          <id>54</id>
+          <items xsi:type="form:FormGroup">
+            <name>МестоВыплатыКасса</name>
+            <id>56</id>
+            <items xsi:type="form:Decoration">
+              <name>МестоВыплатыКассаПолеНадпись</name>
+              <id>92</id>
+              <title>
+                <key>ru</key>
+                <value>Если выплата может выполняться через разные кассы, укажите основную</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>If payment can be made using different cash accounts, specify the main one </value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>МестоВыплатыКассаПолеНадписьРасширеннаяПодсказка</name>
+                <id>94</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестоВыплатыКассаПолеНадписьКонтекстноеМеню</name>
+                <id>93</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.ПоясняющийТекст</color>
+              </textColor>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>МестоВыплатыКассаПоле</name>
+              <id>58</id>
+              <title>
+                <key>ru</key>
+                <value>Касса</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Cash account</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>МестоВыплатыЗарплатыОрганизации.МестоВыплаты</segments>
+              </dataPath>
+              <titleLocation>Left</titleLocation>
+              <extendedTooltip>
+                <name>МестоВыплатыКассаПолеРасширеннаяПодсказка</name>
+                <id>60</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестоВыплатыКассаПолеКонтекстноеМеню</name>
+                <id>59</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <handlers>
+                  <event>Opening</event>
+                  <name>МестоВыплатыКассаПолеОткрытие</name>
+                </handlers>
+                <maxWidth>25</maxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <createButton>true</createButton>
+                <quickChoice>true</quickChoice>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+                <choiceParameterLinks>
+                  <name>Отбор.Владелец</name>
+                  <datapath xsi:type="form:DataPath">
+                    <segments>ОрганизацияСсылка</segments>
+                  </datapath>
+                </choiceParameterLinks>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Место выплаты касса</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Payment location cash desk</value>
+            </title>
+            <extendedTooltip>
+              <name>МестоВыплатыКассаРасширеннаяПодсказка</name>
+              <id>57</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>МестоВыплатыЗарплатныйПроект</name>
+            <id>74</id>
+            <items xsi:type="form:Decoration">
+              <name>МестоВыплатыЗарплатныйПроектПолеНадпись</name>
+              <id>95</id>
+              <title>
+                <key>ru</key>
+                <value>Если у организации есть несколько зарплатных проектов (соглашений о перечислении зарплаты на счета сотрудников), укажите основной
+</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>If the company has several payroll card programs (agreements on crediting salary to employees' accounts), specify the main one
+</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>МестоВыплатыЗарплатныйПроектПолеНадписьРасширеннаяПодсказка</name>
+                <id>97</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестоВыплатыЗарплатныйПроектПолеНадписьКонтекстноеМеню</name>
+                <id>96</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <textColor xsi:type="core:ColorRef">
+                <color>Style.ПоясняющийТекст</color>
+              </textColor>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>МестоВыплатыЗарплатныйПроектПоле</name>
+              <id>76</id>
+              <title>
+                <key>ru</key>
+                <value>Зарплатный проект</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Payroll card program</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>МестоВыплатыЗарплатыОрганизации.МестоВыплаты</segments>
+              </dataPath>
+              <titleLocation>Left</titleLocation>
+              <extendedTooltip>
+                <name>МестоВыплатыЗарплатныйПроектПолеРасширеннаяПодсказка</name>
+                <id>78</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестоВыплатыЗарплатныйПроектПолеКонтекстноеМеню</name>
+                <id>77</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <handlers>
+                  <event>Opening</event>
+                  <name>МестоВыплатыЗарплатныйПроектПолеОткрытие</name>
+                </handlers>
+                <maxWidth>25</maxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <createButton>true</createButton>
+                <quickChoice>true</quickChoice>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+                <choiceParameterLinks>
+                  <name>Отбор.Организация</name>
+                  <datapath xsi:type="form:DataPath">
+                    <segments>ОрганизацияСсылка</segments>
+                  </datapath>
+                </choiceParameterLinks>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Место выплаты зарплатный проект</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Payment location payroll card program</value>
+            </title>
+            <extendedTooltip>
+              <name>МестоВыплатыЗарплатныйПроектРасширеннаяПодсказка</name>
+              <id>75</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Page</type>
+            <extInfo xsi:type="form:PageGroupExtInfo">
+              <group>Vertical</group>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Места выплаты зарплаты</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Salary payment locations</value>
+          </title>
+          <extendedTooltip>
+            <name>МестаВыплатыЗарплатыРасширеннаяПодсказка</name>
+            <id>55</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Pages</type>
+          <extInfo xsi:type="form:PagesGroupExtInfo">
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаДетализацияМестВыплат</name>
+          <id>228</id>
+          <items xsi:type="form:Table">
+            <name>МестаВыплатыЗарплатыДетализация</name>
+            <id>206</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>МестаВыплатыЗарплатыДетализация</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <items xsi:type="form:FormField">
+              <name>МестаВыплатыЗарплатыДетализацияСпособВыплаты</name>
+              <id>219</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>МестаВыплатыЗарплатыДетализация.СпособВыплаты</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>МестаВыплатыЗарплатыДетализацияСпособВыплатыРасширеннаяПодсказка</name>
+                <id>221</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестаВыплатыЗарплатыДетализацияСпособВыплатыКонтекстноеМеню</name>
+                <id>220</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <autoMarkIncomplete>true</autoMarkIncomplete>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>МестаВыплатыЗарплатыДетализацияВид</name>
+              <id>222</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>МестаВыплатыЗарплатыДетализация.Вид</segments>
+              </dataPath>
+              <handlers>
+                <event>OnChange</event>
+                <name>МестаВыплатыЗарплатыДетализацияВидПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>МестаВыплатыЗарплатыДетализацияВидРасширеннаяПодсказка</name>
+                <id>224</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестаВыплатыЗарплатыДетализацияВидКонтекстноеМеню</name>
+                <id>223</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <listChoiceMode>true</listChoiceMode>
+                <autoMarkIncomplete>true</autoMarkIncomplete>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>МестаВыплатыЗарплатыДетализацияМестоВыплаты</name>
+              <id>225</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>МестаВыплатыЗарплатыДетализация.МестоВыплаты</segments>
+              </dataPath>
+              <extendedTooltip>
+                <name>МестаВыплатыЗарплатыДетализацияМестоВыплатыРасширеннаяПодсказка</name>
+                <id>227</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестаВыплатыЗарплатыДетализацияМестоВыплатыКонтекстноеМеню</name>
+                <id>226</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>EnterOnInput</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <createButton>true</createButton>
+                <autoMarkIncomplete>true</autoMarkIncomplete>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <autoCommandBar>
+              <name>МестаВыплатыЗарплатыДетализацияКоманднаяПанель</name>
+              <id>208</id>
+              <horizontalAlign>Left</horizontalAlign>
+              <autoFill>true</autoFill>
+            </autoCommandBar>
+            <searchStringAddition>
+              <name>МестаВыплатыЗарплатыДетализацияСтрокаПоиска</name>
+              <id>210</id>
+              <extendedTooltip>
+                <name>МестаВыплатыЗарплатыДетализацияСтрокаПоискаРасширеннаяПодсказка</name>
+                <id>212</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестаВыплатыЗарплатыДетализацияСтрокаПоискаКонтекстноеМеню</name>
+                <id>211</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <source>МестаВыплатыЗарплатыДетализация</source>
+              <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+              </extInfo>
+            </searchStringAddition>
+            <viewStatusAddition>
+              <name>МестаВыплатыЗарплатыДетализацияСостояниеПросмотра</name>
+              <id>213</id>
+              <extendedTooltip>
+                <name>МестаВыплатыЗарплатыДетализацияСостояниеПросмотраРасширеннаяПодсказка</name>
+                <id>215</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестаВыплатыЗарплатыДетализацияСостояниеПросмотраКонтекстноеМеню</name>
+                <id>214</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>ViewStatusAddition</type>
+              <source>МестаВыплатыЗарплатыДетализация</source>
+              <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+              </extInfo>
+            </viewStatusAddition>
+            <searchControlAddition>
+              <name>МестаВыплатыЗарплатыДетализацияУправлениеПоиском</name>
+              <id>216</id>
+              <extendedTooltip>
+                <name>МестаВыплатыЗарплатыДетализацияУправлениеПоискомРасширеннаяПодсказка</name>
+                <id>218</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>МестаВыплатыЗарплатыДетализацияУправлениеПоискомКонтекстноеМеню</name>
+                <id>217</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>SearchControlAddition</type>
+              <source>МестаВыплатыЗарплатыДетализация</source>
+              <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+              </extInfo>
+            </searchControlAddition>
+            <extendedTooltip>
+              <name>МестаВыплатыЗарплатыДетализацияРасширеннаяПодсказка</name>
+              <id>209</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>МестаВыплатыЗарплатыДетализацияКонтекстноеМеню</name>
+              <id>207</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <changeRowSet>true</changeRowSet>
+            <changeRowOrder>true</changeRowOrder>
+            <width>71</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <maxWidth>60</maxWidth>
+            <heightInTableRows>5</heightInTableRows>
+            <maxRowsCount>5</maxRowsCount>
+            <selectionMode>MultiRow</selectionMode>
+            <header>true</header>
+            <headerHeight>1</headerHeight>
+            <footerHeight>1</footerHeight>
+            <horizontalScrollBar>AutoUse</horizontalScrollBar>
+            <verticalScrollBar>AutoUse</verticalScrollBar>
+            <horizontalLines>true</horizontalLines>
+            <verticalLines>true</verticalLines>
+            <searchOnInput>Auto</searchOnInput>
+            <initialListView>Auto</initialListView>
+            <verticalStretch>true</verticalStretch>
+            <enableStartDrag>true</enableStartDrag>
+            <enableDrag>true</enableDrag>
+            <fileDragMode>AsFileRef</fileDragMode>
+            <rowFilter xsi:type="core:UndefinedValue"/>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Детализация мест выплат</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Payment location breakdown</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Детализация мест выплат</value>
+          </toolTip>
+          <toolTip>
+            <key>en</key>
+            <value>Payment location breakdown</value>
+          </toolTip>
+          <width>76</width>
+          <horizontalStretch>false</horizontalStretch>
+          <extendedTooltip>
+            <name>ГруппаДетализацияМестВыплатРасширеннаяПодсказка</name>
+            <id>229</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <behavior>PopUp</behavior>
+            <representation>WeakSeparation</representation>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Как правило, выплата выполняется:</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Payment is usually made:</value>
+        </title>
+        <extendedTooltip>
+          <name>МестоВыплатыЗарплатыГруппаРасширеннаяПодсказка</name>
+          <id>43</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Выплата зарплаты</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Payroll payment</value>
+      </title>
+      <extendedTooltip>
+        <name>ВыплатаЗарплатыРасширеннаяПодсказка</name>
+        <id>139</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>Бухучет</name>
+      <id>136</id>
+      <items xsi:type="form:FormGroup">
+        <name>НастройкиБухучета</name>
+        <id>119</id>
+        <items xsi:type="form:FormGroup">
+          <name>БухучетЗарплаты</name>
+          <id>22</id>
+          <items xsi:type="form:FormField">
+            <name>БухучетЗарплатыОрганизацийСтатьяФинансирования</name>
+            <id>12</id>
+            <title>
+              <key>ru</key>
+              <value>Финансирование</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Financing</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>БухучетЗарплатыОрганизаций.СтатьяФинансирования</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>БухучетЗарплатыОрганизацийСтатьяФинансированияПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>БухучетЗарплатыОрганизацийСтатьяФинансированияРасширеннаяПодсказка</name>
+              <id>14</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>БухучетЗарплатыОрганизацийСтатьяФинансированияКонтекстноеМеню</name>
+              <id>13</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+              <choiceParameters>
+                <name>Отбор.ВАрхиве</name>
+                <value xsi:type="form:FormChoiceListDesTimeValue">
+                  <value xsi:type="core:BooleanValue"/>
+                </value>
+              </choiceParameters>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>БухучетЗарплатыОрганизацийСпособОтраженияЗарплатыВБухучете</name>
+            <id>1</id>
+            <title>
+              <key>ru</key>
+              <value>Способ отражения</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Record method</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>БухучетЗарплатыОрганизаций.СпособОтраженияЗарплатыВБухучете</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>СпособОтраженияЗарплатыВБухучетеПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>БухучетЗарплатыОрганизацийСпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка</name>
+              <id>8</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>БухучетЗарплатыОрганизацийСпособОтраженияЗарплатыВБухучетеКонтекстноеМеню</name>
+              <id>2</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+              <choiceParameters>
+                <name>Отбор.ВАрхиве</name>
+                <value xsi:type="form:FormChoiceListDesTimeValue">
+                  <value xsi:type="core:BooleanValue"/>
+                </value>
+              </choiceParameters>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>БухучетЗарплатыОрганизацийОтношениеКЕНВД</name>
+            <id>3</id>
+            <title>
+              <key>ru</key>
+              <value>ЕНВД</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>UTII</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>БухучетЗарплатыОрганизаций.ОтношениеКЕНВД</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ОтношениеКЕНВДПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>БухучетЗарплатыОрганизацийОтношениеКЕНВДРасширеннаяПодсказка</name>
+              <id>9</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>БухучетЗарплатыОрганизацийОтношениеКЕНВДКонтекстноеМеню</name>
+              <id>4</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>false</horizontalStretch>
+              <wrap>true</wrap>
+              <clearButton>true</clearButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>БухучетЗарплатыОрганизацийПериодСтрокой</name>
+            <id>5</id>
+            <title>
+              <key>ru</key>
+              <value>Действует с</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Valid from</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>БухучетЗарплатыОрганизацийПериодСтрокой</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>БухучетЗарплатыОрганизацийПериодСтрокойПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>БухучетЗарплатыОрганизацийПериодСтрокойРасширеннаяПодсказка</name>
+              <id>10</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>БухучетЗарплатыОрганизацийПериодСтрокойКонтекстноеМеню</name>
+              <id>6</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>AutoComplete</event>
+                <name>БухучетЗарплатыОрганизацийПериодСтрокойАвтоПодбор</name>
+              </handlers>
+              <handlers>
+                <event>StartChoice</event>
+                <name>БухучетЗарплатыОрганизацийПериодСтрокойНачалоВыбора</name>
+              </handlers>
+              <handlers>
+                <event>Tuning</event>
+                <name>БухучетЗарплатыОрганизацийПериодСтрокойРегулирование</name>
+              </handlers>
+              <handlers>
+                <event>TextEditEnd</event>
+                <name>БухучетЗарплатыОрганизацийПериодСтрокойОкончаниеВводаТекста</name>
+              </handlers>
+              <width>12</width>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>false</horizontalStretch>
+              <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
+              <spinButton>true</spinButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Button">
+            <name>БухучетЗарплатыОрганизацийИстория</name>
+            <id>7</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>БухучетЗарплатыОрганизацийИсторияРасширеннаяПодсказка</name>
+              <id>11</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>Hyperlink</type>
+            <commandName>Form.Command.БухучетЗарплатыОрганизацийИстория</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Бухучет зарплаты</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Payroll accounting</value>
+          </title>
+          <toolTipRepresentation>None</toolTipRepresentation>
+          <extendedTooltip>
+            <name>БухучетЗарплатыРасширеннаяПодсказка</name>
+            <id>23</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Настройки бухучета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Bookkeeping settings</value>
+        </title>
+        <extendedTooltip>
+          <name>НастройкиБухучетаРасширеннаяПодсказка</name>
+          <id>120</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Бухгалтерский учет</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Accounting</value>
+      </title>
+      <extendedTooltip>
+        <name>БухучетРасширеннаяПодсказка</name>
+        <id>137</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ЗаменаУстаревшейАналитикиБухучета</name>
+      <id>140</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаОписаниеАвтозамены</name>
+        <id>158</id>
+        <items xsi:type="form:Decoration">
+          <name>КартинкаОписание</name>
+          <id>160</id>
+          <title>
+            <key>ru</key>
+            <value>Картинка описание</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Picture description</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КартинкаОписаниеРасширеннаяПодсказка</name>
+            <id>162</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КартинкаОписаниеКонтекстноеМеню</name>
+            <id>161</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>StdPicture.Information</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>НадписьОписаниеАвтозамены</name>
+          <id>163</id>
+          <title>
+            <key>ru</key>
+            <value>При отражении в бухучете начислений по базе среднего заработка или по фактическим начислениям текущего года &quot;устаревшие&quot; статьи финансирования и способы отражения зарплаты в бухучете (дата окончания действия меньше текущего месяца) будут автоматически заменены на те, что указаны в настройках.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>When recording accruals by average earnings base or by actual accruals of the current year in bookkeeping, &quot;obsolete&quot; financing items and salary recording methods in bookkeeping (expiration date less than the current month) will be automatically replaced with those specified in the settings.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>НадписьОписаниеАвтозаменыРасширеннаяПодсказка</name>
+            <id>165</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НадписьОписаниеАвтозаменыКонтекстноеМеню</name>
+            <id>164</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <maxWidth>70</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <textColor xsi:type="core:ColorRef">
+            <color>Style.ТекстИнформационнойНадписи</color>
+          </textColor>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Описание автозамены</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Autochange description</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаОписаниеАвтозаменыРасширеннаяПодсказка</name>
+          <id>159</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>НастройкаАвтозамены</name>
+        <id>121</id>
+        <items xsi:type="form:FormField">
+          <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеСтатьяФинансирования</name>
+          <id>142</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучете.СтатьяФинансирования</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеСтатьяФинансированияПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеСтатьяФинансированияРасширеннаяПодсказка</name>
+            <id>144</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеСтатьяФинансированияКонтекстноеМеню</name>
+            <id>143</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокой</name>
+          <id>145</id>
+          <title>
+            <key>ru</key>
+            <value>Действует с</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Valid from</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокой</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойРасширеннаяПодсказка</name>
+            <id>147</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойКонтекстноеМеню</name>
+            <id>146</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>AutoComplete</event>
+              <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойАвтоПодбор</name>
+            </handlers>
+            <handlers>
+              <event>StartChoice</event>
+              <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойНачалоВыбора</name>
+            </handlers>
+            <handlers>
+              <event>Tuning</event>
+              <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойРегулирование</name>
+            </handlers>
+            <handlers>
+              <event>TextEditEnd</event>
+              <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойОкончаниеВводаТекста</name>
+            </handlers>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <spinButton>true</spinButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>НастройкиАвтозаменыБухучетаПоСреднемуЗаработкуИстория</name>
+          <id>132</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>НастройкиАвтозаменыБухучетаПоСреднемуЗаработкуИсторияРасширеннаяПодсказка</name>
+            <id>133</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеИстория</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Устаревшие статьи финансирования заменять на:</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Replace obsolete financing items with:</value>
+        </title>
+        <extendedTooltip>
+          <name>НастройкаАвтозаменыРасширеннаяПодсказка</name>
+          <id>122</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаСпособОтражения</name>
+        <id>156</id>
+        <items xsi:type="form:FormField">
+          <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеСпособОтраженияЗарплатыВБухучете</name>
+          <id>148</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучете.СпособОтраженияЗарплатыВБухучете</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеСпособОтраженияЗарплатыВБухучетеПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеСпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка</name>
+            <id>150</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеСпособОтраженияЗарплатыВБухучетеКонтекстноеМеню</name>
+            <id>149</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокой</name>
+          <id>151</id>
+          <title>
+            <key>ru</key>
+            <value>Действует с</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Valid from</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокой</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойРасширеннаяПодсказка</name>
+            <id>153</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойКонтекстноеМеню</name>
+            <id>152</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>AutoComplete</event>
+              <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойАвтоПодбор</name>
+            </handlers>
+            <handlers>
+              <event>StartChoice</event>
+              <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойНачалоВыбора</name>
+            </handlers>
+            <handlers>
+              <event>Tuning</event>
+              <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойРегулирование</name>
+            </handlers>
+            <handlers>
+              <event>TextEditEnd</event>
+              <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокойОкончаниеВводаТекста</name>
+            </handlers>
+            <width>12</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <spinButton>true</spinButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеИстория</name>
+          <id>154</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеИсторияРасширеннаяПодсказка</name>
+            <id>155</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеИстория</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Устаревшие способы отражения зарплаты в бухучете заменять на:</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Replace obsolete salary recording methods in bookkeeping with:</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаСпособОтраженияРасширеннаяПодсказка</name>
+          <id>157</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Замена устаревшей аналитики бухучета</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Obsolete bookkeeping dimensions replacement</value>
+      </title>
+      <extendedTooltip>
+        <name>ЗаменаУстаревшейАналитикиБухучетаРасширеннаяПодсказка</name>
+        <id>141</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>БухучетИзлишнеУдержанногоНДФЛ</name>
+      <id>166</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаОписаниеБухучетНДФЛ</name>
+        <id>168</id>
+        <items xsi:type="form:Decoration">
+          <name>КартинаИнформацияВозвратНДФЛ</name>
+          <id>170</id>
+          <title>
+            <key>ru</key>
+            <value>Картина информация возврат НДФЛ</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Picture information personal income tax return</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КартинаИнформацияВозвратНДФЛРасширеннаяПодсказка</name>
+            <id>172</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КартинаИнформацияВозвратНДФЛКонтекстноеМеню</name>
+            <id>171</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>StdPicture.Information</picture>
+            </picture>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Группа1</name>
+          <id>198</id>
+          <items xsi:type="form:Decoration">
+            <name>НадписьВозвратНДФЛ</name>
+            <id>173</id>
+            <title>
+              <key>ru</key>
+              <value>Возврат налогоплательщику излишне удержанной суммы налога производится налоговым агентом за счет сумм этого налога, подлежащих перечислению в бюджетную систему РФ в счет предстоящих платежей как по указанному налогоплательщику, так и по иным налогоплательщикам, с доходов которых налоговый агент производит удержание такого налога.</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>The overdeducted tax amount is returned to the taxpayer by the tax agent at the expense of the tax amounts to be transferred to the budget system of the Russian Federation on account of future payments both for the specified taxpayer and for other taxpayers from whose income the tax agent deducts such tax.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>НадписьВозвратНДФЛРасширеннаяПодсказка</name>
+              <id>175</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НадписьВозвратНДФЛКонтекстноеМеню</name>
+              <id>174</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <maxWidth>70</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <textColor xsi:type="core:ColorRef">
+              <color>Style.ТекстИнформационнойНадписи</color>
+            </textColor>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Decoration">
+            <name>НадписьВозвратНДФЛПродолжение</name>
+            <id>195</id>
+            <title>
+              <key>ru</key>
+              <value>Настройка определяет порядок определения статей финансирования, по которым будет зарегистрировано обязательство по возврату излишне удержанного налога.</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Setting defines how you determine the financing items for which the obligation to return the overdeducted tax will be registered.</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>НадписьВозвратНДФЛПродолжениеРасширеннаяПодсказка</name>
+              <id>197</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НадписьВозвратНДФЛПродолжениеКонтекстноеМеню</name>
+              <id>196</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <maxWidth>70</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <textColor xsi:type="core:ColorRef">
+              <color>Style.ТекстИнформационнойНадписи</color>
+            </textColor>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Группа1РасширеннаяПодсказка</name>
+            <id>199</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Описанеие настройки бухучета излишне удержанного НДФЛ</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Details of accounting of overdeducted personal income tax setting</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаОписаниеБухучетНДФЛРасширеннаяПодсказка</name>
+          <id>169</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>БухучетИзлишнеУдержанногоНДФЛПоБазовымНачислениям</name>
+        <id>187</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>БухучетИзлишнеУдержанногоНДФЛПоБазовымНачислениям</segments>
+        </dataPath>
+        <titleLocation>None</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>БухучетИзлишнеУдержанногоНДФЛПоБазовымНачислениямПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>БухучетИзлишнеУдержанногоНДФЛПоБазовымНачислениямРасширеннаяПодсказка</name>
+          <id>189</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>БухучетИзлишнеУдержанногоНДФЛПоБазовымНачислениямКонтекстноеМеню</name>
+          <id>188</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>RadioButtonField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Распределять по базовым начислениям сотрудника</value>
+            </presentation>
+            <presentation>
+              <key>en</key>
+              <value>Allocate to basic employee accruals</value>
+            </presentation>
+            <value xsi:type="core:NumberValue">
+              <value>1</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНастройкаСтатьи</name>
+        <id>185</id>
+        <items xsi:type="form:FormField">
+          <name>БухучетИзлишнеУдержанногоНДФЛОтнестиНаСтатью</name>
+          <id>190</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>БухучетИзлишнеУдержанногоНДФЛОтнестиНаСтатью</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>БухучетИзлишнеУдержанногоНДФЛОтнестиНаСтатьюПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>БухучетИзлишнеУдержанногоНДФЛОтнестиНаСтатьюРасширеннаяПодсказка</name>
+            <id>192</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>БухучетИзлишнеУдержанногоНДФЛОтнестиНаСтатьюКонтекстноеМеню</name>
+            <id>191</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Отнести на статью</value>
+              </presentation>
+              <presentation>
+                <key>en</key>
+                <value>Allocate to item</value>
+              </presentation>
+              <value xsi:type="core:NumberValue">
+                <value>1</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>БухучетИзлишнеУдержанногоНДФЛСтатьяФинансирования</name>
+          <id>182</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>БухучетИзлишнеУдержанногоНДФЛ.СтатьяФинансирования</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>БухучетИзлишнеУдержанногоНДФЛСтатьяФинансированияПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>БухучетИзлишнеУдержанногоНДФЛСтатьяФинансированияРасширеннаяПодсказка</name>
+            <id>184</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>БухучетИзлишнеУдержанногоНДФЛСтатьяФинансированияКонтекстноеМеню</name>
+            <id>183</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа настройка статьи</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group item setup</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаНастройкаСтатьиРасширеннаяПодсказка</name>
+          <id>186</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокой</name>
+        <id>179</id>
+        <title>
+          <key>ru</key>
+          <value>Действует с</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Valid from</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>БухучетИзлишнеУдержанногоНДФЛПериодСтрокой</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойРасширеннаяПодсказка</name>
+          <id>181</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойКонтекстноеМеню</name>
+          <id>180</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>AutoComplete</event>
+            <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойАвтоПодбор</name>
+          </handlers>
+          <handlers>
+            <event>StartChoice</event>
+            <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойНачалоВыбора</name>
+          </handlers>
+          <handlers>
+            <event>Tuning</event>
+            <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойРегулирование</name>
+          </handlers>
+          <handlers>
+            <event>TextEditEnd</event>
+            <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокойОкончаниеВводаТекста</name>
+          </handlers>
+          <width>15</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>false</horizontalStretch>
+          <wrap>true</wrap>
+          <choiceButton>true</choiceButton>
+          <spinButton>true</spinButton>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>БухучетИзлишнеУдержанногоНДФЛИстория</name>
+        <id>193</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>БухучетИзлишнеУдержанногоНДФЛИсторияРасширеннаяПодсказка</name>
+          <id>194</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.БухучетИзлишнеУдержанногоНДФЛИстория</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Бухучет излишне удержанного НДФЛ</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Accounting of overdeducted personal income tax</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Бухучет излишне удержанного НДФЛ</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Accounting of overdeducted personal income tax</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>БухучетИзлишнеУдержанногоНДФЛРасширеннаяПодсказка</name>
+        <id>167</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Страницы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Pages</value>
+    </title>
+    <extendedTooltip>
+      <name>СтраницыРасширеннаяПодсказка</name>
+      <id>135</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnTop</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаписатьИЗакрыть</name>
+      <id>18</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <defaultItem>true</defaultItem>
+      <extendedTooltip>
+        <name>ФормаЗаписатьИЗакрытьРасширеннаяПодсказка</name>
+        <id>19</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ЗаписатьИЗакрыть</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаОтмена</name>
+      <id>20</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаОтменаРасширеннаяПодсказка</name>
+        <id>21</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Cancel</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>NewWriteProcessing</event>
+    <name>ОбработкаЗаписиНового</name>
+  </handlers>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>FillCheckProcessingAtServer</event>
+    <name>ОбработкаПроверкиЗаполненияНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>ОрганизацияСсылка</name>
+    <id>1</id>
+    <valueType>
+      <types>CatalogRef.Организации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Организация</name>
+    <id>2</id>
+    <valueType>
+      <types>CatalogObject.Организации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>БухучетЗарплатыОрганизацийНаборЗаписей</name>
+    <id>3</id>
+    <valueType>
+      <types>InformationRegisterRecordSet.БухучетЗарплатыОрганизаций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>БухучетЗарплатыОрганизаций</name>
+    <id>4</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.БухучетЗарплатыОрганизаций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>БухучетЗарплатыОрганизацийПериодСтрокой</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет действует с</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting is valid from</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>БухучетЗарплатыОрганизацийНаборЗаписейПрочитан</name>
+    <id>6</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетЗарплатыОрганизацийНоваяЗапись</name>
+    <id>7</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетЗарплатыОрганизацийПрежняя</name>
+    <id>8</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкиЗарплатаКадрыРасширенная</name>
+    <id>9</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.НастройкиЗарплатаКадрыРасширенная</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.НастройкаНачисленияЗарплатыРасширенная</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>МестоВыплатыЗарплатыОрганизации</name>
+    <id>10</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.МестаВыплатыЗарплатыОрганизаций</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+      <for>
+        <value>true</value>
+        <role>Role.НастройкаВыплаченнойЗарплатыРасширенная</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>НоваяКассаЗаголовок</name>
+    <id>11</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НовыйЗарплатныйПроектЗаголовок</name>
+    <id>12</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВыплачиватьЗарплатуВПоследнийДеньМесяца</name>
+    <title>
+      <key>ru</key>
+      <value>Выплачивать зарплату в последний день месяца</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Pay salary on the last day of the month </value>
+    </title>
+    <id>13</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.НастройкаНачисленияЗарплатыРасширенная</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеНаборЗаписей</name>
+    <id>14</id>
+    <valueType>
+      <types>InformationRegisterRecordSet.СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучете</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеНаборЗаписейПрочитан</name>
+    <id>15</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеНоваяЗапись</name>
+    <id>16</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокой</name>
+    <title>
+      <key>ru</key>
+      <value>Настройка действует с</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Setting is effective since</value>
+    </title>
+    <id>17</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеПрежняя</name>
+    <id>18</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучете</name>
+    <id>19</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучете</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучете</name>
+    <id>20</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучете</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеНаборЗаписей</name>
+    <id>21</id>
+    <valueType>
+      <types>InformationRegisterRecordSet.СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучете</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеНаборЗаписейПрочитан</name>
+    <id>22</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеНоваяЗапись</name>
+    <id>23</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПериодСтрокой</name>
+    <title>
+      <key>ru</key>
+      <value>Способ отражения для замены устаревшей аналитики в бухучете период строкой</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Record method for replacing obsolete dimensions in bookkeeping period as a string</value>
+    </title>
+    <id>24</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеПрежняя</name>
+    <id>25</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛ</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛ</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>InformationRegisterRecordManager.БухучетИзлишнеУдержанногоНДФЛ</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛНаборЗаписей</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛНабор записей</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax Record set</value>
+    </title>
+    <id>27</id>
+    <valueType>
+      <types>InformationRegisterRecordSet.БухучетИзлишнеУдержанногоНДФЛ</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛНаборЗаписейПрочитан</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛНабор записей прочитан</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax Record set read</value>
+    </title>
+    <id>28</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛНоваяЗапись</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛНовая запись</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax New record</value>
+    </title>
+    <id>29</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛПериодСтрокой</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛПериод строкой</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax Period as a string</value>
+    </title>
+    <id>30</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛПрежняя</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛПрежняя</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax Previous</value>
+    </title>
+    <id>31</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛПоБазовымНачислениям</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛПо базовым начислениям</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax By basic accruals</value>
+    </title>
+    <id>33</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплатыРасширенная</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>БухучетИзлишнеУдержанногоНДФЛОтнестиНаСтатью</name>
+    <title>
+      <key>ru</key>
+      <value>Бухучет излишне удержанного НДФЛОтнести на статью</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting of overdeducted personal income tax Allocate to item</value>
+    </title>
+    <id>32</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплатыРасширенная</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>МестаВыплатыЗарплатыДетализация</name>
+    <title>
+      <key>ru</key>
+      <value>Места выплаты зарплаты детализация</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Salary payment locations breakdown</value>
+    </title>
+    <id>34</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеМестВыплатыЗарплатыОрганизаций</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+    </edit>
+    <savedData>true</savedData>
+    <columns>
+      <name>СпособВыплаты</name>
+      <title>
+        <key>ru</key>
+        <value>Способ выплаты</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Payment method</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>CatalogRef.СпособыВыплатыЗарплаты</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Вид</name>
+      <title>
+        <key>ru</key>
+        <value>Вид</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Kind</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>EnumRef.ВидыМестВыплатыЗарплаты</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>МестоВыплаты</name>
+      <title>
+        <key>ru</key>
+        <value>Место выплаты</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Payment location</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>DefinedType.МестоВыплатыЗарплатыСотрудников</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <formCommands>
+    <name>БухучетЗарплатыОрганизацийИстория</name>
+    <title>
+      <key>ru</key>
+      <value>История изменения бухгалтерского учета...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Bookkeeping history...</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Бухучет зарплаты организации (история)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company payroll accounting  (history)</value>
+    </toolTip>
+    <use>
+      <for>
+        <value>true</value>
+        <role>Role.ДобавлениеИзменениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ПолныеПрава</role>
+      </for>
+      <for>
+        <value>true</value>
+        <role>Role.ЧтениеБухгалтерскогоУчетаЗарплаты</role>
+      </for>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>БухучетЗарплатыОрганизацийИстория</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.ИспользоватьНачислениеЗарплаты</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаписатьИЗакрыть</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save and close</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Save and close</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаписатьИЗакрыть</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеИстория</name>
+    <title>
+      <key>ru</key>
+      <value>История изменения настроек...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Settings change history...</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройки автозамены статьи финансирования (история)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Financing item autochange settings (history)</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СтатьяФинансированияДляЗаменыУстаревшейАналитикиВБухучетеИстория</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеИстория</name>
+    <title>
+      <key>ru</key>
+      <value>История изменения настроек...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Settings change history...</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройки автозамены способа отражения в бухучете (история)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Autochange settings for record method in bookkeeping (history)</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СпособОтраженияДляЗаменыУстаревшейАналитикиВБухучетеИстория</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>БухучетИзлишнеУдержанногоНДФЛИстория</name>
+    <title>
+      <key>ru</key>
+      <value>История изменения настройки...</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Settings change history...</value>
+    </title>
+    <id>5</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>БухучетИзлишнеУдержанногоНДФЛИстория</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

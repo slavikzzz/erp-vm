@@ -1,0 +1,2356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаЗаголовок</name>
+    <id>53</id>
+    <items xsi:type="form:Decoration">
+      <name>ОписаниеРаздела</name>
+      <id>5</id>
+      <title>
+        <key>ru</key>
+        <value>Управление параметрами международного финансового учета.</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Manage financial accounting parameters.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ОписаниеРазделаРасширеннаяПодсказка</name>
+        <id>100</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОписаниеРазделаКонтекстноеМеню</name>
+        <id>6</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСправка</name>
+      <id>55</id>
+      <items xsi:type="form:Button">
+        <name>Справка</name>
+        <id>57</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СправкаРасширеннаяПодсказка</name>
+          <id>102</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Справка</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Help</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаСправкаРасширеннаяПодсказка</name>
+        <id>101</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>CommandBar</type>
+      <extInfo xsi:type="form:CommandBarExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Title</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаЗаголовокРасширеннаяПодсказка</name>
+      <id>99</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ИспользоватьМеждународныйФинансовыйУчет</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Международный финансовый учет</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>General ledger</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>НаборКонстант.ИспользоватьМеждународныйФинансовыйУчет</segments>
+    </dataPath>
+    <titleLocation>Right</titleLocation>
+    <toolTip>
+      <key>ru</key>
+      <value>Подготовка отчетности в соответствии с принципами МСФО или иными правилами, построенными на основе МСФО.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Prepare reporting according to the IFRS principles or other rules based on IFRS.</value>
+    </toolTip>
+    <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+    <handlers>
+      <event>OnChange</event>
+      <name>ИспользоватьМеждународныйФинансовыйУчетПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ИспользоватьМеждународныйФинансовыйУчетРасширеннаяПодсказка</name>
+      <id>113</id>
+      <type>Label</type>
+      <maxWidth>60</maxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ИспользоватьМеждународныйФинансовыйУчетКонтекстноеМеню</name>
+      <id>2</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаИспользоватьНесколькоПлановСчетовВМеждународномУчете</name>
+    <id>218</id>
+    <items xsi:type="form:FormField">
+      <name>ИспользоватьНесколькоПлановСчетовВМеждународномУчете</name>
+      <id>220</id>
+      <title>
+        <key>ru</key>
+        <value>Несколько планов счетов</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Multiple charts of accounts</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НаборКонстант.ИспользоватьНесколькоПлановСчетовВМеждународномУчете</segments>
+      </dataPath>
+      <titleLocation>Right</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Формировать проводки по нескольким планам счетов с разной структурой и детализацией.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Generate entries for multiple charts of accounts with different structure and details.</value>
+      </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <handlers>
+        <event>OnChange</event>
+        <name>ИспользоватьНесколькоПлановСчетовВМеждународномУчетеПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ИспользоватьНесколькоПлановСчетовВМеждународномУчетеРасширеннаяПодсказка</name>
+        <id>222</id>
+        <type>Label</type>
+        <maxWidth>60</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИспользоватьНесколькоПлановСчетовВМеждународномУчетеКонтекстноеМеню</name>
+        <id>221</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаКомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчете</name>
+      <id>223</id>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияКомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчете</name>
+        <id>225</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияКомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчетеРасширеннаяПодсказка</name>
+          <id>227</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияКомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчетеКонтекстноеМеню</name>
+          <id>226</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:PictureDecorationExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+          </picture>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>КомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчете</name>
+        <id>228</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>КомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчетеРасширеннаяПодсказка</name>
+          <id>230</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчетеКонтекстноеМеню</name>
+          <id>229</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <maxWidth>60</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Комментарий использовать несколько планов счетов в международном учете</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Comment use several charts of accounts in financial accounting</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаКомментарийИспользоватьНесколькоПлановСчетовВМеждународномУчетеРасширеннаяПодсказка</name>
+        <id>224</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаСтраницыНесколькоПлановСчетов</name>
+      <id>238</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаПланыСчетовГоризонтальная</name>
+        <id>231</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияОтступ</name>
+          <id>235</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияОтступРасширеннаяПодсказка</name>
+            <id>237</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияОтступКонтекстноеМеню</name>
+            <id>236</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>1</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>КартинкаПланыСчетовНеобходимоНастроитьВалютыУчета</name>
+          <id>291</id>
+          <title>
+            <key>ru</key>
+            <value>Картинка планы счетов необходимо настроить валюты учета</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Picture charts of accounts set up accounting currencies</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КартинкаПланыСчетовНеобходимоНастроитьВалютыУчетаРасширеннаяПодсказка</name>
+            <id>293</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КартинкаПланыСчетовНеобходимоНастроитьВалютыУчетаКонтекстноеМеню</name>
+            <id>292</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Внимание16</picture>
+            </picture>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>ОткрытьПланыСчетов</name>
+          <id>233</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОткрытьПланыСчетовРасширеннаяПодсказка</name>
+            <id>234</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.ОткрытьПланыСчетов</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Планы счетов горизонтальная</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Charts of accounts horizontal</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаПланыСчетовГоризонтальнаяРасширеннаяПодсказка</name>
+          <id>232</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаОдинПланСчетов</name>
+        <id>240</id>
+        <items xsi:type="form:Decoration">
+          <name>КартинкаПланСчетовНеобходимоНастроитьВалютыУчета</name>
+          <id>297</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КартинкаПланСчетовНеобходимоНастроитьВалютыУчетаРасширеннаяПодсказка</name>
+            <id>299</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КартинкаПланСчетовНеобходимоНастроитьВалютыУчетаКонтекстноеМеню</name>
+            <id>298</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.Внимание16</picture>
+            </picture>
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Button">
+          <name>НастроитьПредопределенныйПланСчетов</name>
+          <id>242</id>
+          <title>
+            <key>ru</key>
+            <value>Настроить параметры и валюты учета</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Set up parameters and accounting currencies</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>НастроитьПредопределенныйПланСчетовРасширеннаяПодсказка</name>
+            <id>243</id>
+            <title>
+              <key>ru</key>
+              <value>Настройка представления счетов, варианта формирования проводок, способа учета ценностей, контролируемых организацией, но не принадлежащих ей, функциональной валюты и валюты представления.</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Set up account presentation, entry generation option, method of accounting for values controlled by the company but not belonging to it, functional currency, and presentation currency.</value>
+            </title>
+            <type>Label</type>
+            <maxWidth>70</maxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Hyperlink</type>
+          <commandName>Form.Command.НастроитьПредопределенныйПланСчетов</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа один план счетов</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group one chart of accounts</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаОдинПланСчетовРасширеннаяПодсказка</name>
+          <id>241</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа страницы несколько планов счетов</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Group pages multiple charts of accounts</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаСтраницыНесколькоПлановСчетовРасширеннаяПодсказка</name>
+        <id>239</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Использовать несколько планов счетов в международном учете</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use several charts of accounts in financial accounting</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаИспользоватьНесколькоПлановСчетовВМеждународномУчетеРасширеннаяПодсказка</name>
+      <id>219</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаФормированиеПроводокМеждународногоУчета</name>
+    <id>151</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаФормированиеПроводокМеждународногоУчетаПоДаннымОперативного</name>
+      <id>153</id>
+      <items xsi:type="form:FormField">
+        <name>ПроводкиМеждународногоУчетаПоДаннымОперативного</name>
+        <id>157</id>
+        <title>
+          <key>ru</key>
+          <value>Проводки по данным оперативного учета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Entries by operational accounting data</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.ПроводкиМеждународногоУчетаПоДаннымОперативного</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>Источником данных для проводок являются движения финансовых регистров оперативного учета.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Financial register records of operational accounting are the data source for entries.</value>
+        </toolTip>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ФормироватьПроводкиМеждународногоУчетаПоДаннымОперативногоПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ПроводкиМеждународногоУчетаПоДаннымОперативногоРасширеннаяПодсказка</name>
+          <id>159</id>
+          <type>Label</type>
+          <maxWidth>60</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПроводкиМеждународногоУчетаПоДаннымОперативногоКонтекстноеМеню</name>
+          <id>158</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаВариантНастройкиПроводокПоДаннымОперативногоУчета</name>
+        <id>207</id>
+        <items xsi:type="form:Decoration">
+          <name>Декорация2</name>
+          <id>209</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>Декорация2РасширеннаяПодсказка</name>
+            <id>211</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>Декорация2КонтекстноеМеню</name>
+            <id>210</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>1</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <fileDragMode>AsFileRef</fileDragMode>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаВариантНастройкиПроводокПоДаннымОперативногоУчетаВертикальная</name>
+          <id>199</id>
+          <items xsi:type="form:FormField">
+            <name>ВариантНастройкиПроводокПоОбъектамУчета</name>
+            <id>201</id>
+            <title>
+              <key>ru</key>
+              <value>Настройка по объектам учета</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Setting by accounting objects</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ВариантНастройкиПроводокПоДаннымОперативногоУчета</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>ru</key>
+              <value>Рекомендуемый вариант настройки.</value>
+            </toolTip>
+            <toolTip>
+              <key>en</key>
+              <value>The recommended setup option.</value>
+            </toolTip>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ВариантНастройкиПроводокПоОбъектамУчетаПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ВариантНастройкиПроводокПоОбъектамУчетаРасширеннаяПодсказка</name>
+              <id>203</id>
+              <type>Label</type>
+              <maxWidth>60</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ВариантНастройкиПроводокПоОбъектамУчетаКонтекстноеМеню</name>
+              <id>202</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Настройка по объектам учета и их корреспонденциям</value>
+                </presentation>
+                <presentation>
+                  <key>en</key>
+                  <value>Set up by accounting objects and their correspondence</value>
+                </presentation>
+                <value xsi:type="core:NumberValue">
+                  <value>1</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>НастройкаПроводокПоОбъектамУчета</name>
+            <id>212</id>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>НаборКонстант.НастройкаПроводокПоОбъектамУчета</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>НастройкаПроводокПоОбъектамУчетаРасширеннаяПодсказка</name>
+              <id>214</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НастройкаПроводокПоОбъектамУчетаКонтекстноеМеню</name>
+              <id>213</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаКомментарийНастройкаПоОбъектамУчетаПартионныйУчет</name>
+            <id>244</id>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаПартионныйУчет</name>
+              <id>246</id>
+              <title>
+                <key>ru</key>
+                <value>Декорация комментарий настройка по объектам учета партионный учет</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Decoration comment accounting object setting lot accounting</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаПартионныйУчетРасширеннаяПодсказка</name>
+                <id>248</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаПартионныйУчетКонтекстноеМеню</name>
+                <id>247</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+                </picture>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>КомментарийНастройкаПоОбъектамУчетаПартионныйУчет</name>
+              <id>249</id>
+              <title>
+                <key>ru</key>
+                <value>Необходим переход на партионный учет 2.2.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Migration to lot accounting 2.2 required.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>КомментарийНастройкаПоОбъектамУчетаПартионныйУчетРасширеннаяПодсказка</name>
+                <id>251</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>КомментарийНастройкаПоОбъектамУчетаПартионныйУчетКонтекстноеМеню</name>
+                <id>250</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <maxWidth>75</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа комментарий настройка по объектам учета партионный учет</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Group comment accounting object setting lot accounting</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаКомментарийНастройкаПоОбъектамУчетаПартионныйУчетРасширеннаяПодсказка</name>
+              <id>245</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаКомментарийНастройкаПоОбъектамУчетаПроизводство</name>
+            <id>260</id>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаПроизводство</name>
+              <id>262</id>
+              <title>
+                <key>ru</key>
+                <value>Декорация комментарий настройка по объектам учета производство</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Decoration comment accounting object setting production</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаПроизводствоРасширеннаяПодсказка</name>
+                <id>264</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаПроизводствоКонтекстноеМеню</name>
+                <id>263</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+                </picture>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>КомментарийНастройкаПоОбъектамУчетаПроизводство</name>
+              <id>265</id>
+              <title>
+                <key>ru</key>
+                <value>Необходим переход на производство 2.2.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Migration to production 2.2 is required.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>КомментарийНастройкаПоОбъектамУчетаПроизводствоРасширеннаяПодсказка</name>
+                <id>267</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>КомментарийНастройкаПоОбъектамУчетаПроизводствоКонтекстноеМеню</name>
+                <id>266</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <maxWidth>75</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа комментарий настройка по объектам учета производство</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Group comment accounting object setting production</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаКомментарийНастройкаПоОбъектамУчетаПроизводствоРасширеннаяПодсказка</name>
+              <id>261</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаКомментарийНастройкаПоОбъектамУчетаВНА</name>
+            <id>268</id>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаВНА</name>
+              <id>270</id>
+              <title>
+                <key>ru</key>
+                <value>Декорация комментарий настройка по объектам учета ВНА</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Decoration comment accounting object setting FA</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаВНАРасширеннаяПодсказка</name>
+                <id>272</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаВНАКонтекстноеМеню</name>
+                <id>271</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+                </picture>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>КомментарийНастройкаПоОбъектамУчетаВНА</name>
+              <id>273</id>
+              <title>
+                <key>ru</key>
+                <value>Необходим переход на учет ВНА 2.4.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Migration to FA accounting 2.4 is required.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>КомментарийНастройкаПоОбъектамУчетаВНАРасширеннаяПодсказка</name>
+                <id>275</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>КомментарийНастройкаПоОбъектамУчетаВНАКонтекстноеМеню</name>
+                <id>274</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <maxWidth>75</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа комментарий настройка по объектам учета ВНА</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Group comment accounting object setting FA</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаКомментарийНастройкаПоОбъектамУчетаВНАРасширеннаяПодсказка</name>
+              <id>269</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаКомментарийНастройкаПоОбъектамУчетаВзаиморасчеты</name>
+            <id>252</id>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаВзаиморасчеты</name>
+              <id>254</id>
+              <title>
+                <key>ru</key>
+                <value>Декорация комментарий настройка по объектам учета взаиморасчеты</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Decoration comment accounting object setting AR/AP accounting</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаВзаиморасчетыРасширеннаяПодсказка</name>
+                <id>256</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияКомментарийНастройкаПоОбъектамУчетаВзаиморасчетыКонтекстноеМеню</name>
+                <id>255</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:PictureDecorationExtInfo">
+                <picture xsi:type="core:PictureRef">
+                  <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+                </picture>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>КомментарийНастройкаПоОбъектамУчетаВзаиморасчеты</name>
+              <id>257</id>
+              <title>
+                <key>ru</key>
+                <value>Необходим переход на взаиморасчеты &quot;Онлайн&quot;.</value>
+              </title>
+              <title>
+                <key>en</key>
+                <value>Switching to &quot;Online&quot; AR/AP accounting mode is required.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>КомментарийНастройкаПоОбъектамУчетаВзаиморасчетыРасширеннаяПодсказка</name>
+                <id>259</id>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>КомментарийНастройкаПоОбъектамУчетаВзаиморасчетыКонтекстноеМеню</name>
+                <id>258</id>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <maxWidth>75</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа комментарий настройка по объектам учета взаиморасчеты</value>
+            </title>
+            <title>
+              <key>en</key>
+              <value>Group comment accounting object setting AR/AP accounting</value>
+            </title>
+            <extendedTooltip>
+              <name>ГруппаКомментарийНастройкаПоОбъектамУчетаВзаиморасчетыРасширеннаяПодсказка</name>
+              <id>253</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ВариантНастройкиПроводокПоХозяйственнымОперациям</name>
+            <id>204</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ВариантНастройкиПроводокПоДаннымОперативногоУчета</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>ru</key>
+              <value>Более сложный вариант настройки.</value>
+            </toolTip>
+            <toolTip>
+              <key>en</key>
+              <value>More complex setup option.</value>
+            </toolTip>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ВариантНастройкиПроводокПоХозяйственнымОперациямПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ВариантНастройкиПроводокПоХозяйственнымОперациямРасширеннаяПодсказка</name>
+              <id>206</id>
+              <type>Label</type>
+              <maxWidth>60</maxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ВариантНастройкиПроводокПоХозяйственнымОперациямКонтекстноеМеню</name>
+              <id>205</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Настройка по хозяйственным операциям</value>
+                </presentation>
+                <presentation>
+                  <key>en</key>
+                  <value>Set up by business transactions</value>
+                </presentation>
+                <value xsi:type="core:NumberValue">
+                  <value>2</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>НастройкаПроводокПоХозяйственнымОперациям</name>
+            <id>215</id>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>НаборКонстант.НастройкаПроводокПоХозяйственнымОперациям</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>НастройкаПроводокПоХозяйственнымОперациямРасширеннаяПодсказка</name>
+              <id>217</id>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>НастройкаПроводокПоХозяйственнымОперациямКонтекстноеМеню</name>
+              <id>216</id>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Вариант настройки проводок по данным оперативного учета вертикальная</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Option of posting settings based on operational accounting data vertical</value>
+          </title>
+          <extendedTooltip>
+            <name>ГруппаВариантНастройкиПроводокПоДаннымОперативногоУчетаВертикальнаяРасширеннаяПодсказка</name>
+            <id>200</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа вариант настройки проводок по данным оперативного учета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group option of entry settings based on operational accounting data</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаВариантНастройкиПроводокПоДаннымОперативногоУчетаРасширеннаяПодсказка</name>
+          <id>208</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Формирование проводок международного учета 1</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>General ledger posting generation 1</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаФормированиеПроводокМеждународногоУчетаПоДаннымОперативногоРасширеннаяПодсказка</name>
+        <id>154</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <representation>NormalSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ЛокализацияГруппаФормированиеПроводокМеждународногоУчета</name>
+      <id>155</id>
+      <items xsi:type="form:FormField">
+        <name>ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированного</name>
+        <id>163</id>
+        <title>
+          <key>ru</key>
+          <value>Проводки по данным регламентированного учета</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Entries by local accounting data</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированного</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>Источником данных для проводок являются уже сформированные проводки по регламентированному учету. Настройка выполняется по соответствиям счетов и оборотов.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Already generated local accounting entries are used as data source for the entries. The setting is performed according to the correspondence of accounts and turnovers.</value>
+        </toolTip>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииРеквизита</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированногоРасширеннаяПодсказка</name>
+          <id>165</id>
+          <type>Label</type>
+          <maxWidth>60</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ФормироватьПроводкиМеждународногоУчетаПоДаннымРегламентированногоКонтекстноеМеню</name>
+          <id>164</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКомментарийПроводкиМеждународногоПоДаннымРегл</name>
+        <id>178</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКомментарийПроводкиМеждународногоПоДаннымРегл</name>
+          <id>180</id>
+          <title>
+            <key>ru</key>
+            <value>Декорация комментарий проводки международного по данным регл</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Decoration comment financial accounting entries by local accounting data</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКомментарийПроводкиМеждународногоПоДаннымРеглРасширеннаяПодсказка</name>
+            <id>182</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКомментарийПроводкиМеждународногоПоДаннымРеглКонтекстноеМеню</name>
+            <id>181</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>КомментарийИспользоватьПроводкиМеждународногоПоДаннымРегл</name>
+          <id>183</id>
+          <title>
+            <key>ru</key>
+            <value>Доступно при включенной опции &quot;Регламентированный учет&quot; (раздел &quot;НСИ и администрирование - &quot;Регламентированный учет&quot;).</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Available when the &quot;Local accounting&quot; option in &quot;Master data and settings – Local accounting&quot; section is enabled.</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КомментарийИспользоватьПроводкиМеждународногоПоДаннымРеглРасширеннаяПодсказка</name>
+            <id>185</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КомментарийИспользоватьПроводкиМеждународногоПоДаннымРеглКонтекстноеМеню</name>
+            <id>184</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <maxWidth>60</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Комментарий проводки международного по данным регл</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Comment financial accounting entries by local accounting data</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаКомментарийПроводкиМеждународногоПоДаннымРеглРасширеннаяПодсказка</name>
+          <id>179</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа формирование проводок международного учета</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Group generation of general ledger postings</value>
+      </title>
+      <extendedTooltip>
+        <name>ЛокализацияГруппаФормированиеПроводокМеждународногоУчетаРасширеннаяПодсказка</name>
+        <id>156</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <representation>NormalSeparation</representation>
+        <showLeftMargin>true</showLeftMargin>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаОтражатьВМеждународномУчетеТолькоПроверенныеДокументы</name>
+      <id>276</id>
+      <items xsi:type="form:FormField">
+        <name>ОтражатьВМеждународномУчетеТолькоПроверенныеДокументы</name>
+        <id>278</id>
+        <title>
+          <key>ru</key>
+          <value>Отражать в учете только проверенные документы</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Record only verified documents in accounting</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.ОтражатьВМеждународномУчетеТолькоПроверенныеДокументы</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <toolTip>
+          <key>ru</key>
+          <value>При групповом отражении документов в учете, проводки формируются только для проверенных документов.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>If batch recording of documents in accounting is used, entries are generated only for verified documents.</value>
+        </toolTip>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ОтражатьВМеждународномУчетеТолькоПроверенныеДокументыПриИзменении</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ОтражатьВМеждународномУчетеТолькоПроверенныеДокументыРасширеннаяПодсказка</name>
+          <id>280</id>
+          <type>Label</type>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОтражатьВМеждународномУчетеТолькоПроверенныеДокументыКонтекстноеМеню</name>
+          <id>279</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКомментарийОтражатьВУчетеТолькоПроверенныеДокументы</name>
+        <id>281</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияКомментарийОтражатьВУчетеТолькоПроверенныеДокументы</name>
+          <id>283</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияКомментарийОтражатьВУчетеТолькоПроверенныеДокументыРасширеннаяПодсказка</name>
+            <id>285</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияКомментарийОтражатьВУчетеТолькоПроверенныеДокументыКонтекстноеМеню</name>
+            <id>284</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <width>2</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>1</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:PictureDecorationExtInfo">
+            <picture xsi:type="core:PictureRef">
+              <picture>CommonPicture.ИнформацияПоНедоступнымПолям</picture>
+            </picture>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>КомментарийОтражатьВУчетеТолькоПроверенныеДокументы</name>
+          <id>286</id>
+          <title>
+            <key>ru</key>
+            <value>Доступно при включенной опции &quot;Проверка документов&quot; (раздел &quot;НСИ и администрирование&quot; - &quot;Финансовый результат и контроллинг&quot; - &quot;Исправление и проверка документов&quot;).</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Available when the &quot;Document check&quot; option is enabled (section &quot;Master data and settings&quot; - &quot;Profitability &amp; cost&quot; - &quot;Document correction and check&quot;).</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КомментарийОтражатьВУчетеТолькоПроверенныеДокументыРасширеннаяПодсказка</name>
+            <id>288</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>КомментарийОтражатьВУчетеТолькоПроверенныеДокументыКонтекстноеМеню</name>
+            <id>287</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <maxWidth>60</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа комментарий отражать в учете только проверенные документы</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Group comment record only verified documents in accounting</value>
+        </title>
+        <width>86</width>
+        <horizontalStretch>false</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаКомментарийОтражатьВУчетеТолькоПроверенныеДокументыРасширеннаяПодсказка</name>
+          <id>282</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Отражать в международном учете только проверенные документы</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Record only verified documents in financial accounting</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаОтражатьВМеждународномУчетеТолькоПроверенныеДокументыРасширеннаяПодсказка</name>
+        <id>277</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Формирование проводок</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Generate postings</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаФормированиеПроводокМеждународногоУчетаРасширеннаяПодсказка</name>
+      <id>152</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <controlRepresentation>Picture</controlRepresentation>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаВыгрузкаЗагрузкаМоделиУчета</name>
+    <id>129</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаЗагрузитьМодельУчета</name>
+      <id>139</id>
+      <items xsi:type="form:Button">
+        <name>ЗагрузитьМодельУчета</name>
+        <id>149</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ЗагрузитьМодельУчетаРасширеннаяПодсказка</name>
+          <id>150</id>
+          <title>
+            <key>ru</key>
+            <value>Загрузка из файла методической модели учета: плана счетов, шаблонов проводок, финансовых отчетов, групп финансового учета, статей ДДС, доходов, расходов, активов и пассивов.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Import from a file of instructional model of accounting: chart of accounts, posting templates, financial reports, groups of financial accounting, cash flow items, income, expenses, assets and liabilities.</value>
+          </title>
+          <type>Label</type>
+          <maxWidth>60</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.ЗагрузитьМодельУчета</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Загрузить модель учета</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Import accounting model</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Группа валюта представления</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Group presentation currency</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ГруппаЗагрузитьМодельУчетаРасширеннаяПодсказка</name>
+        <id>140</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаВыгрузитьМодельУчета</name>
+      <id>131</id>
+      <items xsi:type="form:Button">
+        <name>ВыгрузитьМодельУчетаВФайл</name>
+        <id>147</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ВыгрузитьМодельУчетаВФайлРасширеннаяПодсказка</name>
+          <id>148</id>
+          <title>
+            <key>ru</key>
+            <value>Выгрузка в файл методической модели учета: плана счетов, шаблонов проводок, финансовых отчетов, групп финансового учета, статей ДДС, доходов, расходов, активов и пассивов.</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Export to the file of instructional model of accounting: chart of accounts, posting templates, financial reports, financial accounting groups, cash flow items, income, expenses, assets and liabilities. </value>
+          </title>
+          <type>Label</type>
+          <maxWidth>60</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Hyperlink</type>
+        <commandName>Form.Command.ВыгрузитьМодельУчета</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Группа валюта функциональная</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Group functional currency</value>
+      </title>
+      <extendedTooltip>
+        <name>ГруппаВыгрузитьМодельУчетаРасширеннаяПодсказка</name>
+        <id>132</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>Vertical</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Загрузка и выгрузка модели учета</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export and import accounting model</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа валюты учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Group accounting currencies</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>ГруппаВыгрузкаЗагрузкаМоделиУчетаРасширеннаяПодсказка</name>
+      <id>130</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <behavior>Collapsible</behavior>
+      <collapsed>true</collapsed>
+      <controlRepresentation>Picture</controlRepresentation>
+      <representation>NormalSeparation</representation>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <slaveItemsWidth>Equal</slaveItemsWidth>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>НаборКонстант</name>
+    <title>
+      <key>ru</key>
+      <value>Набор констант</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Constant set</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>ConstantsSet</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ВестиУУНаПланеСчетовХозрасчетный</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ВерсияВнешнегоМодуля</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ИмяКриптопровайдера</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ИспользоватьВнешнийМодуль</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ОтпечатокСертификатаОнлайнПроверки</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ДокументооборотСКонтролирующимиОрганами_ТипКриптопровайдера</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.НастройкаПроводокПоХозяйственнымОперациям</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ПроводкиМеждународногоУчетаПоДаннымОперативного</segments>
+    </notDefaultUseAlwaysAttributes>
+    <main>true</main>
+  </attributes>
+  <attributes>
+    <name>РежимРаботы</name>
+    <title>
+      <key>ru</key>
+      <value>Режим работы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Operating mode</value>
+    </title>
+    <id>3</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>УчетВФункциональнойВалютеУпр</name>
+    <title>
+      <key>ru</key>
+      <value>Учет в функциональной валюте упр.</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Manag. accounting in functional currency</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВариантНастройкиПроводокПоДаннымОперативногоУчета</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант настройки проводок по данным оперативного учета</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Option of posting settings based on operational accounting data</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ВыгрузитьМодельУчета</name>
+    <title>
+      <key>ru</key>
+      <value>Выгрузить модель учета</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Export accounting model</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгрузить модель учета в файл</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Export accounting model to file</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВыгрузитьМодельУчета</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗагрузитьМодельУчета</name>
+    <title>
+      <key>ru</key>
+      <value>Загрузить модель учета</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Import accounting model</value>
+    </title>
+    <id>3</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Загрузить модель учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Import accounting model</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗагрузитьМодельУчета</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьПланыСчетов</name>
+    <title>
+      <key>ru</key>
+      <value>Планы счетов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Charts of accounts</value>
+    </title>
+    <id>4</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Список планов счетов для настройки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Charts of accounts list for customization</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьПланыСчетов</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>НастроитьПредопределенныйПланСчетов</name>
+    <title>
+      <key>ru</key>
+      <value>Настроить предопределенный план счетов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Set up predefined chart of accounts</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Настроить валюты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Set currencies</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>НастроитьПредопределенныйПланСчетов</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ConstantsFormExtInfo"/>
+</form:Form>

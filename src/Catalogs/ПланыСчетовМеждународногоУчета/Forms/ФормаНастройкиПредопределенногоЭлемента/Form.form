@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Настройки учета на плане счетов</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>Accounting settings in chart of accounts</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>ПредставлениеСчетов</name>
+    <id>49</id>
+    <title>
+      <key>ru</key>
+      <value>Представление счетов в документах, списках и отчетах</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Presentation of accounts in documents, lists, and reports</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ПредставлениеСчетов</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <extendedTooltip>
+      <name>ПредставлениеСчетовРасширеннаяПодсказка</name>
+      <id>51</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ПредставлениеСчетовКонтекстноеМеню</name>
+      <id>50</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>RadioButtonField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>В виде кода и наименования</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>As code and name</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ПредставлениеСчетовМеждународногоУчета.EnumValue.ВВидеКодаИНаименования</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>В виде кода</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>As code</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ПредставлениеСчетовМеждународногоУчета.EnumValue.ВВидеКода</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>В виде наименования</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>As name</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ПредставлениеСчетовМеждународногоУчета.EnumValue.ВВидеНаименования</value>
+        </value>
+      </choiceList>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>ВариантФормированияПроводок</name>
+    <id>41</id>
+    <title>
+      <key>ru</key>
+      <value>Вариант формирования проводок</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Entry generation option</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ВариантФормированияПроводок</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <toolTip>
+      <key>ru</key>
+      <value>При выборе варианта &quot;с корреспонденцией&quot; в каждой проводке указывается и дебетуемый и кредитуемый счет. При выборе варианта &quot;без корреспонденции&quot; проводки по дебетуемым и кредитуемым счетам формируются отдельными записями, сохранение баланса контролируется на уровне документа.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>When selecting the &quot;with correspondence&quot; option, debited and credited accounts are specified in each entry. When selecting the &quot;no correspondence&quot; option, debited and credited account entries are generated in separate records and the balance is controlled at the document level.</value>
+    </toolTip>
+    <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+    <extendedTooltip>
+      <name>ВариантФормированияПроводокРасширеннаяПодсказка</name>
+      <id>43</id>
+      <type>Label</type>
+      <maxWidth>60</maxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ВариантФормированияПроводокКонтекстноеМеню</name>
+      <id>42</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>RadioButtonField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>С корреспонденцией</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>With correspondence</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВариантыФормированияПроводок.EnumValue.СКорреспонденцией</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Без корреспонденции</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>No correspondence</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВариантыФормированияПроводок.EnumValue.БезКорреспонденции</value>
+        </value>
+      </choiceList>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>СпособУчетаНесобственныхПодконтрольныхЦенностей</name>
+    <id>46</id>
+    <title>
+      <key>ru</key>
+      <value>Ценности, контролируемые организацией, но не принадлежащие ей</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Values controlled by the company but not belonging to it</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>СпособУчетаНесобственныхПодконтрольныхЦенностей</segments>
+    </dataPath>
+    <titleLocation>Top</titleLocation>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ учета материалов, принятых в переработку, товаров, принятых на ответственное хранение или на комиссию.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Method of accounting for materials to subcontract, vendor-managed inventory, or consignment goods received.</value>
+    </toolTip>
+    <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+    <extendedTooltip>
+      <name>СпособУчетаНесобственныхПодконтрольныхЦенностейРасширеннаяПодсказка</name>
+      <id>48</id>
+      <type>Label</type>
+      <maxWidth>60</maxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СпособУчетаНесобственныхПодконтрольныхЦенностейКонтекстноеМеню</name>
+      <id>47</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>RadioButtonField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Не отражаются на счетах</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>Not recorded on accounts</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СпособыУчетаНесобственныхПодконтрольныхЦенностей.EnumValue.НеОтражаютсяНаСчетах</value>
+        </value>
+      </choiceList>
+      <choiceList>
+        <presentation>
+          <key>ru</key>
+          <value>Отражаются на забалансовых счетах</value>
+        </presentation>
+        <presentation>
+          <key>en</key>
+          <value>Recorded on off-balance accounts</value>
+        </presentation>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.СпособыУчетаНесобственныхПодконтрольныхЦенностей.EnumValue.ОтражаютсяНаЗабалансовыхСчетах</value>
+        </value>
+      </choiceList>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаВалюты</name>
+    <id>4</id>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаГоризонтальная</name>
+      <id>6</id>
+      <items xsi:type="form:FormField">
+        <name>УчетВФункциональнойВалюте</name>
+        <id>8</id>
+        <title>
+          <key>ru</key>
+          <value>Функциональная валюта</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Functional currency</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>УчетВФункциональнойВалюте</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Валюта, используемая в основной экономической среде, в которой предприятие осуществляет свою деятельность. Функциональная валюта международного финансового учета — это валюта, в которой предприятие осуществляет большую часть своих операций.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Currency of the main economic environment of the company. Functional currency of financial accounting is a currency used in most of transactions of the company.</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>УчетВФункциональнойВалютеРасширеннаяПодсказка</name>
+          <id>10</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>УчетВФункциональнойВалютеКонтекстноеМеню</name>
+          <id>9</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <maxWidth>35</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <listChoiceMode>true</listChoiceMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <choiceList>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.ВидыУчетаВФункциональнойВалюте.EnumValue.ВВалютеУпр</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <value xsi:type="core:ReferenceValue">
+              <value>Enum.ВидыУчетаВФункциональнойВалюте.EnumValue.ВВалютеРегл</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Горизонтальная</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Horizontal</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Валюта, используемая в основной экономической среде, в которой осуществляется деятельность. Как правило, функциональная валюта - это валюта, в которой осуществляется большая часть операций.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>The currency used in the primary economic environment of the company. Typically, the functional currency is the currency, in which most transactions are carried out.</value>
+      </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <extendedTooltip>
+        <name>ГруппаГоризонтальнаяРасширеннаяПодсказка</name>
+        <id>7</id>
+        <type>Label</type>
+        <maxWidth>60</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ГруппаВалютаПредставления</name>
+      <id>33</id>
+      <items xsi:type="form:FormField">
+        <name>ВалютаПредставления</name>
+        <id>22</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ВалютаПредставления</segments>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Альтернативная валюта, в которой формируется отчетность. Операции в данную валюту пересчитываются по курсу на дату операции. Если операция уже выражена в нужной валюте, то пересчет не выполняется.</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Alternative currency, in which reporting is generated. Transactions are recalculated to this currency using the exchange rates as of the transaction date. If the transaction is already in the required currency, the recalculation is not performed.</value>
+        </toolTip>
+        <toolTipRepresentation>None</toolTipRepresentation>
+        <extendedTooltip>
+          <name>ВалютаПредставленияРасширеннаяПодсказка</name>
+          <id>24</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ВалютаПредставленияКонтекстноеМеню</name>
+          <id>23</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <maxWidth>9</maxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <wrap>true</wrap>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Валюта представления</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Presentation currency</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Валюта, в которой предоставляется финансовая отчетность. Операции в данную валюту пересчитываются по курсу на дату операции. Если операция уже выражена в нужной валюте, то пересчет не выполняется.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency, in which financial reporting is presented. Transactions are recalculated to this currency using the exchange rates as of the transaction date. If the transaction is already in the required currency, the recalculation is not performed.</value>
+      </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+      <extendedTooltip>
+        <name>ГруппаВалютаПредставленияРасширеннаяПодсказка</name>
+        <id>34</id>
+        <type>Label</type>
+        <maxWidth>60</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualGroup</type>
+      <extInfo xsi:type="form:UsualGroupExtInfo">
+        <group>HorizontalIfPossible</group>
+        <showLeftMargin>true</showLeftMargin>
+        <united>true</united>
+        <throughAlign>Auto</throughAlign>
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Валюты</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Currencies</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаВалютыРасширеннаяПодсказка</name>
+      <id>5</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаписатьЗакрыть</name>
+      <id>31</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаписатьЗакрытьРасширеннаяПодсказка</name>
+        <id>32</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ЗаписатьИЗакрыть</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаЗакрыть</name>
+      <id>29</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗакрытьРасширеннаяПодсказка</name>
+        <id>30</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Close</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>УчетВФункциональнойВалюте</name>
+    <title>
+      <key>ru</key>
+      <value>Учет в функциональной валюте</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Accounting in functional currency</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>EnumRef.ВидыУчетаВФункциональнойВалюте</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ВалютаПредставления</name>
+    <title>
+      <key>ru</key>
+      <value>Валюта представления</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Presentation currency</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>CatalogRef.Валюты</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ВариантФормированияПроводок</name>
+    <title>
+      <key>ru</key>
+      <value>Вариант формирования проводок</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Entry generation option</value>
+    </title>
+    <id>4</id>
+    <valueType>
+      <types>EnumRef.ВариантыФормированияПроводок</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>СпособУчетаНесобственныхПодконтрольныхЦенностей</name>
+    <title>
+      <key>ru</key>
+      <value>Способ учета несобственных подконтрольных ценностей</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Method of not owned controlled values accounting</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>EnumRef.СпособыУчетаНесобственныхПодконтрольныхЦенностей</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>ПредставлениеСчетов</name>
+    <title>
+      <key>ru</key>
+      <value>Представление счетов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Account presentation</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>EnumRef.ПредставлениеСчетовМеждународногоУчета</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <fillChecking>ShowError</fillChecking>
+    <savedData>true</savedData>
+  </attributes>
+  <formCommands>
+    <name>ЗаписатьИЗакрыть</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Save and close</value>
+    </title>
+    <id>2</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаписатьЗакрыть</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

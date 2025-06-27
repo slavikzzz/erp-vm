@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43304e20-5f8d-48f9-9d2c-8fd087731d29">
+  <name>КонтрольНеразделенныхНаборовЗаписейПриЗаписиПереводыСБПc2b</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных наборов записей при записи переводы СБПc2b</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Control undivided record sets when recording FPS transactions c2b</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.КэшМакетовСБП</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервисаБСП.КонтрольНеразделенныхНаборовЗаписейПриЗаписи</handler>
+</mdclass:EventSubscription>

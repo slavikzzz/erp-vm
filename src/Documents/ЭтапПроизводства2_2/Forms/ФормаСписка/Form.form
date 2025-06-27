@@ -1,0 +1,3119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаОтбор</name>
+    <id>22</id>
+    <items xsi:type="form:FormField">
+      <name>РаспоряжениеОтбор</name>
+      <id>81</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Распоряжение</segments>
+      </dataPath>
+      <titleLocation>Top</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>РаспоряжениеОтборПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>РаспоряжениеОтборРасширеннаяПодсказка</name>
+        <id>83</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>РаспоряжениеОтборКонтекстноеМеню</name>
+        <id>82</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <dropListButton>false</dropListButton>
+        <choiceButton>true</choiceButton>
+        <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+        <clearButton>true</clearButton>
+        <openButton>false</openButton>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>Все</value>
+        </inputHint>
+        <inputHint>
+          <key>en</key>
+          <value>All</value>
+        </inputHint>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ПодразделениеОтбор</name>
+      <id>27</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Подразделение</segments>
+      </dataPath>
+      <titleLocation>Top</titleLocation>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение, в котором выполняется этап производства.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Business unit in which the production stage is performed.</value>
+      </toolTip>
+      <handlers>
+        <event>OnChange</event>
+        <name>ПодразделениеОтборПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>ПодразделениеОтборРасширеннаяПодсказка</name>
+        <id>29</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПодразделениеОтборКонтекстноеМеню</name>
+        <id>28</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <dropListButton>false</dropListButton>
+        <choiceButton>true</choiceButton>
+        <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
+        <clearButton>true</clearButton>
+        <openButton>false</openButton>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceParameters>
+          <name>Отбор.ПроизводственноеПодразделение</name>
+          <value xsi:type="form:FormChoiceListDesTimeValue">
+            <value xsi:type="core:BooleanValue">
+              <value>true</value>
+            </value>
+          </value>
+        </choiceParameters>
+        <inputHint>
+          <key>ru</key>
+          <value>Все</value>
+        </inputHint>
+        <inputHint>
+          <key>en</key>
+          <value>All</value>
+        </inputHint>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СтатусОтбор</name>
+      <id>24</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Статус</segments>
+      </dataPath>
+      <titleLocation>Top</titleLocation>
+      <handlers>
+        <event>OnChange</event>
+        <name>СтатусОтборПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>СтатусОтборРасширеннаяПодсказка</name>
+        <id>26</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СтатусОтборКонтекстноеМеню</name>
+        <id>25</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <maxWidth>15</maxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+        <wrap>true</wrap>
+        <clearButton>true</clearButton>
+        <listChoiceMode>true</listChoiceMode>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Все</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>All</value>
+          </presentation>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыМаршрутныхЛистовПроизводства.EmptyRef</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыЭтаповПроизводства2_2.EnumValue.Сформирован</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыЭтаповПроизводства2_2.EnumValue.КВыполнению</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыЭтаповПроизводства2_2.EnumValue.Начат</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СтатусыЭтаповПроизводства2_2.EnumValue.Завершен</value>
+          </value>
+        </choiceList>
+        <inputHint>
+          <key>ru</key>
+          <value>Все</value>
+        </inputHint>
+        <inputHint>
+          <key>en</key>
+          <value>All</value>
+        </inputHint>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Отбор</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Filter</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаОтборРасширеннаяПодсказка</name>
+      <id>23</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаПользовательскихНастроек</name>
+    <id>98</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа пользовательских настроек</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>User settings group</value>
+    </title>
+    <extendedTooltip>
+      <name>ГруппаПользовательскихНастроекРасширеннаяПодсказка</name>
+      <id>99</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>HorizontalIfPossible</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>Список</name>
+    <id>3</id>
+    <title>
+      <key>ru</key>
+      <value>Список</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>List</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Список</segments>
+    </dataPath>
+    <defaultItem>true</defaultItem>
+    <titleLocation>None</titleLocation>
+    <excludedCommands>Copy</excludedCommands>
+    <excludedCommands>Create</excludedCommands>
+    <items xsi:type="form:FormField">
+      <name>Номер</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Номер</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НомерРасширеннаяПодсказка</name>
+        <id>21</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НомерКонтекстноеМеню</name>
+        <id>20</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>10</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Дата</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Дата</segments>
+      </dataPath>
+      <defaultItem>true</defaultItem>
+      <extendedTooltip>
+        <name>ДатаРасширеннаяПодсказка</name>
+        <id>18</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДатаКонтекстноеМеню</name>
+        <id>17</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>9</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Статус</name>
+      <id>36</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Статус</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СтатусРасширеннаяПодсказка</name>
+        <id>38</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СтатусКонтекстноеМеню</name>
+        <id>37</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Подразделение</name>
+      <id>39</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Подразделение</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПодразделениеРасширеннаяПодсказка</name>
+        <id>41</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПодразделениеКонтекстноеМеню</name>
+        <id>40</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НаименованиеЭтапа</name>
+      <id>75</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.НаименованиеЭтапа</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НаименованиеЭтапаРасширеннаяПодсказка</name>
+        <id>77</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НаименованиеЭтапаКонтекстноеМеню</name>
+        <id>76</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Спецификация</name>
+      <id>78</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Спецификация</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СпецификацияРасширеннаяПодсказка</name>
+        <id>80</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СпецификацияКонтекстноеМеню</name>
+        <id>79</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Ответственный</name>
+      <id>42</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Ответственный</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ОтветственныйРасширеннаяПодсказка</name>
+        <id>44</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОтветственныйКонтекстноеМеню</name>
+        <id>43</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Ссылка</name>
+      <id>66</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Ссылка</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СсылкаРасширеннаяПодсказка</name>
+        <id>68</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СсылкаКонтекстноеМеню</name>
+        <id>67</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <commandBarLocation>Top</commandBarLocation>
+    <autoCommandBar>
+      <name>СписокКоманднаяПанель</name>
+      <id>5</id>
+      <items xsi:type="form:FormGroup">
+        <name>ПодменюСоздатьНаОсновании</name>
+        <id>64</id>
+        <items xsi:type="form:FormGroup">
+          <name>ПодменюСоздатьНаОснованииВажное</name>
+          <id>84</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Создать на основании (Важное)</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Generate (Important)</value>
+          </title>
+          <extendedTooltip>
+            <name>ПодменюСоздатьНаОснованииВажноеРасширеннаяПодсказка</name>
+            <id>85</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ПодменюСоздатьНаОснованииОбычное</name>
+          <id>86</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Создать на основании (Обычное)</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Generate (Standard)</value>
+          </title>
+          <extendedTooltip>
+            <name>ПодменюСоздатьНаОснованииОбычноеРасширеннаяПодсказка</name>
+            <id>87</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ПодменюСоздатьНаОснованииСмТакже</name>
+          <id>88</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Создать на основании (См. также)</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Generate (See also)</value>
+          </title>
+          <extendedTooltip>
+            <name>ПодменюСоздатьНаОснованииСмТакжеРасширеннаяПодсказка</name>
+            <id>89</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Создать на основании</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Generate</value>
+        </title>
+        <extendedTooltip>
+          <name>ПодменюСоздатьНаОснованииРасширеннаяПодсказка</name>
+          <id>65</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Popup</type>
+        <extInfo xsi:type="form:PopupGroupExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>CommonPicture.ЗаполнитьПоШаблону</picture>
+          </picture>
+          <representation>Picture</representation>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ПодменюПечать</name>
+        <id>48</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Печать</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Print</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Команды печати</value>
+        </toolTip>
+        <toolTip>
+          <key>en</key>
+          <value>Print commands</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ПодменюПечатьРасширеннаяПодсказка</name>
+          <id>49</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Popup</type>
+        <extInfo xsi:type="form:PopupGroupExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>StdPicture.Print</picture>
+          </picture>
+          <representation>Auto</representation>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ПодменюОтчеты</name>
+        <id>50</id>
+        <items xsi:type="form:FormGroup">
+          <name>ПодменюОтчетыВажное</name>
+          <id>52</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Подменю отчеты важное</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Important reports submenu</value>
+          </title>
+          <extendedTooltip>
+            <name>ПодменюОтчетыВажноеРасширеннаяПодсказка</name>
+            <id>53</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ПодменюОтчетыОбычное</name>
+          <id>54</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Подменю отчеты обычное</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>Standard reports submenu</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Подменю отчеты важное</value>
+          </toolTip>
+          <toolTip>
+            <key>en</key>
+            <value>Important reports submenu</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ПодменюОтчетыОбычноеРасширеннаяПодсказка</name>
+            <id>55</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ПодменюОтчетыСмТакже</name>
+          <id>56</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Подменю отчеты см также</value>
+          </title>
+          <title>
+            <key>en</key>
+            <value>See also reports submenu</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Подменю отчеты важное</value>
+          </toolTip>
+          <toolTip>
+            <key>en</key>
+            <value>Important reports submenu</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ПодменюОтчетыСмТакжеРасширеннаяПодсказка</name>
+            <id>57</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Отчеты</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Reports</value>
+        </title>
+        <extendedTooltip>
+          <name>ПодменюОтчетыРасширеннаяПодсказка</name>
+          <id>51</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Popup</type>
+        <extInfo xsi:type="form:PopupGroupExtInfo">
+          <picture xsi:type="core:PictureRef">
+            <picture>CommonPicture.Отчеты</picture>
+          </picture>
+          <representation>Picture</representation>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>СписокГруппаИзменитьВыделенные</name>
+        <id>90</id>
+        <items xsi:type="form:Button">
+          <name>СписокИзменитьВыделенные</name>
+          <id>92</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СписокИзменитьВыделенныеРасширеннаяПодсказка</name>
+            <id>93</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ИзменитьВыделенные</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>AdditionalInContextMenu</representationInContextMenu>
+          <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Список группа изменить выделенные</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>List group change the selected ones</value>
+        </title>
+        <extendedTooltip>
+          <name>СписокГруппаИзменитьВыделенныеРасширеннаяПодсказка</name>
+          <id>91</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГлобальныеКоманды</name>
+        <id>58</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Глобальные команды</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Global commands</value>
+        </title>
+        <extendedTooltip>
+          <name>ГлобальныеКомандыРасширеннаяПодсказка</name>
+          <id>59</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo">
+          <commandSource>FormCommandPanelGlobalCommands</commandSource>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>СписокГруппаФорма</name>
+        <id>62</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Список группа форма</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>List group form</value>
+        </title>
+        <extendedTooltip>
+          <name>СписокГруппаФормаРасширеннаяПодсказка</name>
+          <id>63</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo">
+          <commandSource>Form</commandSource>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>СписокСправка</name>
+        <id>60</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СписокСправкаРасширеннаяПодсказка</name>
+          <id>61</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <horizontalAlign>Left</horizontalAlign>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <handlers>
+      <event>BeforeAddRow</event>
+      <name>СписокПередНачаломДобавления</name>
+    </handlers>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>СписокПриАктивизацииСтроки</name>
+    </handlers>
+    <searchStringAddition>
+      <name>СписокСтрокаПоиска</name>
+      <id>7</id>
+      <extendedTooltip>
+        <name>СписокСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>9</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСтрокаПоискаКонтекстноеМеню</name>
+        <id>8</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>Список</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <name>СписокСостояниеПросмотра</name>
+      <id>10</id>
+      <extendedTooltip>
+        <name>СписокСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>12</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСостояниеПросмотраКонтекстноеМеню</name>
+        <id>11</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>Список</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <horizontalLocation>Left</horizontalLocation>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <name>СписокУправлениеПоиском</name>
+      <id>13</id>
+      <extendedTooltip>
+        <name>СписокУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>15</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокУправлениеПоискомКонтекстноеМеню</name>
+        <id>14</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>Список</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>СписокРасширеннаяПодсказка</name>
+      <id>6</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СписокКонтекстноеМеню</name>
+      <id>4</id>
+      <items xsi:type="form:FormGroup">
+        <name>СписокКонтекстноеМенюИзменитьВыделенные</name>
+        <id>94</id>
+        <items xsi:type="form:Button">
+          <name>КонтекстноеМенюИзменитьВыделенные</name>
+          <id>96</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>КонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка</name>
+            <id>97</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ИзменитьВыделенные</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>AdditionalInContextMenu</representationInContextMenu>
+          <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Список контекстное меню изменить выделенные</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>List context menu change the selected ones</value>
+        </title>
+        <extendedTooltip>
+          <name>СписокКонтекстноеМенюИзменитьВыделенныеРасширеннаяПодсказка</name>
+          <id>95</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo"/>
+      </items>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <useAlternationRowColor>true</useAlternationRowColor>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <initialTreeView>ExpandTopLevel</initialTreeView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <rowPictureDataPath xsi:type="form:DataPath">
+      <segments>Список.DefaultPicture</segments>
+    </rowPictureDataPath>
+    <extInfo xsi:type="form:DynamicListTableExtInfo">
+      <autoRefreshPeriod>60</autoRefreshPeriod>
+      <period>
+        <startDate>0001-01-01T00:00:00</startDate>
+        <endDate>0001-01-01T00:00:00</endDate>
+      </period>
+      <topLevelParent xsi:type="core:UndefinedValue"/>
+      <showRoot>true</showRoot>
+      <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
+      <userSettingsGroup>ГруппаПользовательскихНастроек</userSettingsGroup>
+    </extInfo>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>OnLoadDataFromSettingsAtServer</event>
+    <name>ПриЗагрузкеДанныхИзНастроекНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>OnClose</event>
+    <name>ПриЗакрытии</name>
+  </handlers>
+  <handlers>
+    <event>BeforeLoadDataFromSettingsAtServer</event>
+    <name>ПередЗагрузкойДанныхИзНастроекНаСервере</name>
+  </handlers>
+  <excludedCommands>CancelSearch</excludedCommands>
+  <excludedCommands>Change</excludedCommands>
+  <excludedCommands>Copy</excludedCommands>
+  <excludedCommands>Create</excludedCommands>
+  <excludedCommands>Delete</excludedCommands>
+  <excludedCommands>DynamicListStandardSettings</excludedCommands>
+  <excludedCommands>Find</excludedCommands>
+  <excludedCommands>FindByCurrentValue</excludedCommands>
+  <excludedCommands>ListSettings</excludedCommands>
+  <excludedCommands>LoadDynamicListSettings</excludedCommands>
+  <excludedCommands>OutputList</excludedCommands>
+  <excludedCommands>Post</excludedCommands>
+  <excludedCommands>Refresh</excludedCommands>
+  <excludedCommands>SaveDynamicListSettings</excludedCommands>
+  <excludedCommands>SetDateInterval</excludedCommands>
+  <excludedCommands>SetDeletionMark</excludedCommands>
+  <excludedCommands>ShowMultipleSelection</excludedCommands>
+  <excludedCommands>UndoPosting</excludedCommands>
+  <autoSaveDataInSettings>Use</autoSaveDataInSettings>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Список</name>
+    <id>1</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Список.ПроизводствоНаСтороне</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Список.Ссылка</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Список.Статус</segments>
+    </notDefaultUseAlwaysAttributes>
+    <main>true</main>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ 
+	*
+ИЗ
+	Документ.ЭтапПроизводства2_2 КАК ДокументЭтапПроизводства2_2</queryText>
+      <mainTable>Document.ЭтапПроизводства2_2</mainTable>
+      <dynamicDataRead>true</dynamicDataRead>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МоментВремени</dataPath>
+        <field>МоментВремени</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Проведен</dataPath>
+        <field>Проведен</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.СтатьяРасходов</dataPath>
+        <field>ЭкономияМатериалов.СтатьяРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Спецификация</dataPath>
+        <field>ВыходныеИзделия.Спецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальныйКодСтрокиТрудозатраты</dataPath>
+        <field>МаксимальныйКодСтрокиТрудозатраты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.ДатаОперации</dataPath>
+        <field>ВидыЗапасовМатериалы.ДатаОперации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Статус</dataPath>
+        <field>Статус</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Номер</dataPath>
+        <field>Номер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВерсияДанных</dataPath>
+        <field>ВерсияДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕдиницаИзмеренияПредварительногоБуфера</dataPath>
+        <field>ЕдиницаИзмеренияПредварительногоБуфера</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.СтатьяКалькуляции</dataPath>
+        <field>ВидыЗапасовИзделия.СтатьяКалькуляции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Распоряжение</dataPath>
+        <field>Распоряжение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>НаборыМатериаловИРабот</dataPath>
+        <field>НаборыМатериаловИРабот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Дата</dataPath>
+        <field>Дата</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Получатель</dataPath>
+        <field>ЭкономияМатериаловСерии.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Цена</dataPath>
+        <field>ВыходныеИзделия.Цена</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальныйКодСтрокиОбеспечение</dataPath>
+        <field>МаксимальныйКодСтрокиОбеспечение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.КоличествоСтрок</dataPath>
+        <field>НаборыМатериаловИРабот.КоличествоСтрок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПартияПроизводства</dataPath>
+        <field>ПартияПроизводства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.НомерСтроки</dataPath>
+        <field>РасходМатериаловИРабот.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Спецификация</dataPath>
+        <field>Спецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Ссылка</dataPath>
+        <field>ЭкономияМатериаловСерии.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.АналитикаУчетаНоменклатуры</dataPath>
+        <field>ЭкономияМатериалов.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПредварительныйБуфер</dataPath>
+        <field>ПредварительныйБуфер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Этап</dataPath>
+        <field>Этап</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Партнер</dataPath>
+        <field>Партнер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Подразделение</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерСледующегоЭтапа</dataPath>
+        <field>НомерСледующегоЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ДополнительныеРеквизиты</dataPath>
+        <field>ДополнительныеРеквизиты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Подразделение</dataPath>
+        <field>Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыпускПодДеятельность</dataPath>
+        <field>ВыпускПодДеятельность</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.СведенияАвтовыбора</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.СведенияАвтовыбора</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Назначение</dataPath>
+        <field>Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПроизводствоОднойДатой</dataPath>
+        <field>ПроизводствоОднойДатой</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НазначениеПродукция</dataPath>
+        <field>НазначениеПродукция</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СтатусУказанияСерийПолучатель</dataPath>
+        <field>ПобочныеИзделия.СтатусУказанияСерийПолучатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФактическоеОкончаниеЭтапа</dataPath>
+        <field>ФактическоеОкончаниеЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УникальныйИдентификатор</dataPath>
+        <field>УникальныйИдентификатор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалитьНазначениеМатериалы</dataPath>
+        <field>УдалитьНазначениеМатериалы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалитьНазначениеПолуфабрикаты</dataPath>
+        <field>УдалитьНазначениеПолуфабрикаты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РучноеРазмещениеВГрафике</dataPath>
+        <field>РучноеРазмещениеВГрафике</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Организация</dataPath>
+        <field>Организация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ИдентификаторСтроки</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОперацияКакРаспоряжениеВыработки</dataPath>
+        <field>ОперацияКакРаспоряжениеВыработки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Валюта</dataPath>
+        <field>Валюта</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ответственный</dataPath>
+        <field>Ответственный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Комментарий</dataPath>
+        <field>Комментарий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.КлючСвязи</dataPath>
+        <field>НаборыМатериаловИРабот.КлючСвязи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ЭкономияМатериаловСерии</dataPath>
+        <field>ЭкономияМатериаловСерии</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаименованиеЭтапа</dataPath>
+        <field>НаименованиеЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФактическоеНачалоЭтапа</dataPath>
+        <field>ФактическоеНачалоЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПричинаЗадержкиВыполненияЭтапа</dataPath>
+        <field>ПричинаЗадержкиВыполненияЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПроизводствоНаСтороне</dataPath>
+        <field>ПроизводствоНаСтороне</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Количество</dataPath>
+        <field>ЭкономияМатериаловСерии.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПроизводствоНаСтороне2_5</dataPath>
+        <field>ПроизводствоНаСтороне2_5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПланироватьРаботуВидовРабочихЦентров</dataPath>
+        <field>ПланироватьРаботуВидовРабочихЦентров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Непрерывный</dataPath>
+        <field>Непрерывный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДлительностьЭтапа</dataPath>
+        <field>ДлительностьЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕдиницаИзмеренияДлительностиЭтапа</dataPath>
+        <field>ЕдиницаИзмеренияДлительностиЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗавершающийБуфер</dataPath>
+        <field>ЗавершающийБуфер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕдиницаИзмеренияЗавершающегоБуфера</dataPath>
+        <field>ЕдиницаИзмеренияЗавершающегоБуфера</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.ИдентификаторФинЗаписи</dataPath>
+        <field>ВидыЗапасовМатериалы.ИдентификаторФинЗаписи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НеОтгружатьЧастями</dataPath>
+        <field>НеОтгружатьЧастями</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Характеристика</dataPath>
+        <field>ПобочныеИзделияСерии.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаршрутнаяКарта</dataPath>
+        <field>МаршрутнаяКарта</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.Исполнитель</dataPath>
+        <field>Трудозатраты.Исполнитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.ДатаОперации</dataPath>
+        <field>ЭкономияМатериаловСерии.ДатаОперации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходОднойДатой</dataPath>
+        <field>РасходОднойДатой</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.СтатьяРасходов</dataPath>
+        <field>ВидыЗапасовМатериалы.СтатьяРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.СтатусУказанияСерий</dataPath>
+        <field>ЭкономияМатериалов.СтатусУказанияСерий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоэффициентМаршрутнойКарты</dataPath>
+        <field>КоэффициентМаршрутнойКарты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтатьяКалькуляции</dataPath>
+        <field>СтатьяКалькуляции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальныйКодСтрокиИзделия</dataPath>
+        <field>МаксимальныйКодСтрокиИзделия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерЭтапаВПартииЗапуска</dataPath>
+        <field>НомерЭтапаВПартииЗапуска</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МаксимальныйКодСтрокиЭкономия</dataPath>
+        <field>МаксимальныйКодСтрокиЭкономия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидЦены</dataPath>
+        <field>ВидЦены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаОтгрузки</dataPath>
+        <field>ДатаОтгрузки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.Подразделение</dataPath>
+        <field>ВидыЗапасовМатериалы.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗаказПереработчику</dataPath>
+        <field>ЗаказПереработчику</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерЭтапа</dataPath>
+        <field>НомерЭтапа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Исполнитель</dataPath>
+        <field>Исполнитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.АналитикаРасходов</dataPath>
+        <field>ПобочныеИзделия.АналитикаРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаправлениеДеятельности</dataPath>
+        <field>НаправлениеДеятельности</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОставитьИзделияУПереработчика</dataPath>
+        <field>ОставитьИзделияУПереработчика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПорядокРаботыВидовРабочихЦентров</dataPath>
+        <field>ПорядокРаботыВидовРабочихЦентров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Упаковка</dataPath>
+        <field>РасходМатериаловИРабот.Упаковка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаПроизводства</dataPath>
+        <field>ДатаПроизводства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаРасхода</dataPath>
+        <field>ДатаРасхода</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.Сумма</dataPath>
+        <field>ВидыЗапасовИзделия.Сумма</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьМаркируемаяПродукцияГИСМ</dataPath>
+        <field>ЕстьМаркируемаяПродукцияГИСМ</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.АналитикаАктивовПассивов</dataPath>
+        <field>ВидыЗапасовМатериалы.АналитикаАктивовПассивов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ХозяйственнаяОперация</dataPath>
+        <field>ХозяйственнаяОперация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Договор</dataPath>
+        <field>Договор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерПартииЗапуска</dataPath>
+        <field>НомерПартииЗапуска</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КомментарийПриКонвертации</dataPath>
+        <field>КомментарийПриКонвертации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.АналитикаРасходов</dataPath>
+        <field>ВидыЗапасовИзделия.АналитикаРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТребуетсяЗаполнитьПоОперациям</dataPath>
+        <field>ТребуетсяЗаполнитьПоОперациям</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Подразделение</dataPath>
+        <field>ВыходныеИзделияСерии.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПланироватьНеРанее</dataPath>
+        <field>ПланироватьНеРанее</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Упаковка</dataPath>
+        <field>ПобочныеИзделия.Упаковка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерНаПечать</dataPath>
+        <field>НомерНаПечать</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыполнениеРаботОднойДатой</dataPath>
+        <field>ВыполнениеРаботОднойДатой</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаВыполненияРабот</dataPath>
+        <field>ДатаВыполненияРабот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.Использовать</dataPath>
+        <field>ВидыРабочихЦентров.Использовать</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Склад</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Склад</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ПобочныеИзделия</dataPath>
+        <field>ПобочныеИзделия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипПроизводственногоПроцесса</dataPath>
+        <field>ТипПроизводственногоПроцесса</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВариантПриемкиТоваров</dataPath>
+        <field>ВариантПриемкиТоваров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Серия</dataPath>
+        <field>ПобочныеИзделияСерии.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособРаспределенияЗатратНаВыходныеИзделия</dataPath>
+        <field>СпособРаспределенияЗатратНаВыходныеИзделия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЯвляетсяНазначениемПродукции</dataPath>
+        <field>ЯвляетсяНазначениемПродукции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.ВремяРаботы</dataPath>
+        <field>ВидыРабочихЦентров.ВремяРаботы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоУпаковокФакт</dataPath>
+        <field>КоличествоУпаковокФакт</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаРеестраДокументов</dataPath>
+        <field>ДатаРеестраДокументов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОперацияРеестраДокументов</dataPath>
+        <field>ОперацияРеестраДокументов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоУпаковокПлан</dataPath>
+        <field>КоличествоУпаковокПлан</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Последователи.ТипСвязи</dataPath>
+        <field>Последователи.ТипСвязи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.АналитикаУчетаНоменклатуры</dataPath>
+        <field>ВыходныеИзделия.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоУпаковокОтменено</dataPath>
+        <field>КоличествоУпаковокОтменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.НомерСтроки</dataPath>
+        <field>ВидыЗапасовИзделия.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Произведено</dataPath>
+        <field>ПобочныеИзделияСерии.Произведено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ПричинаОтмены</dataPath>
+        <field>ВыходныеИзделия.ПричинаОтмены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УпаковкаПлан</dataPath>
+        <field>УпаковкаПлан</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ОформитьОтчетДавальцу</dataPath>
+        <field>ВидыЗапасовИзделия.ОформитьОтчетДавальцу</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УпаковкаФакт</dataPath>
+        <field>УпаковкаФакт</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УпаковкаОтменено</dataPath>
+        <field>УпаковкаОтменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КоличествоНаЕдиницуПартииВыпуска</dataPath>
+        <field>КоличествоНаЕдиницуПартииВыпуска</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Назначение</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОтветственноеПодразделение</dataPath>
+        <field>ОтветственноеПодразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.Ссылка</dataPath>
+        <field>ВидыЗапасовМатериалы.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДинамическаяСтруктура</dataPath>
+        <field>ДинамическаяСтруктура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.АналитикаУчетаНоменклатуры</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДлительностьДоВыпуска</dataPath>
+        <field>ДлительностьДоВыпуска</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СтатусУказанияСерий</dataPath>
+        <field>ПобочныеИзделия.СтатусУказанияСерий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалитьСворачиватьВидыЗапасовПоМесяцам</dataPath>
+        <field>УдалитьСворачиватьВидыЗапасовПоМесяцам</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>АльтернативныеВидыРабочихЦентров</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Ссылка</dataPath>
+        <field>ВыходныеИзделия.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.НомерСтроки</dataPath>
+        <field>ВыходныеИзделия.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.Ссылка</dataPath>
+        <field>Трудозатраты.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Номенклатура</dataPath>
+        <field>ВыходныеИзделия.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Характеристика</dataPath>
+        <field>ВыходныеИзделия.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.КоличествоУпаковок</dataPath>
+        <field>ВыходныеИзделия.КоличествоУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Номенклатура</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Количество</dataPath>
+        <field>ВыходныеИзделия.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.ВариантНаладки</dataPath>
+        <field>ВидыРабочихЦентров.ВариантНаладки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Упаковка</dataPath>
+        <field>ВыходныеИзделия.Упаковка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Получатель</dataPath>
+        <field>ВыходныеИзделия.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.ВидЗапасов</dataPath>
+        <field>ВидыЗапасовМатериалы.ВидЗапасов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Назначение</dataPath>
+        <field>ВыходныеИзделия.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Серия</dataPath>
+        <field>ВыходныеИзделия.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Произведено</dataPath>
+        <field>ВыходныеИзделия.Произведено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.НазначениеОбеспечения</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.НазначениеОбеспечения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ДатаПроизводства</dataPath>
+        <field>ВыходныеИзделия.ДатаПроизводства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ИспользуетсяАвтовыбор</dataPath>
+        <field>ВыходныеИзделия.ИспользуетсяАвтовыбор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.СтатусУказанияСерий</dataPath>
+        <field>ВыходныеИзделия.СтатусУказанияСерий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.СтатусУказанияСерийОтправитель</dataPath>
+        <field>ВыходныеИзделия.СтатусУказанияСерийОтправитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.СтатусУказанияСерийПолучатель</dataPath>
+        <field>ВыходныеИзделия.СтатусУказанияСерийПолучатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ДоляСтоимости</dataPath>
+        <field>ВыходныеИзделия.ДоляСтоимости</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ДоляСтоимостиНаЕдиницу</dataPath>
+        <field>ВыходныеИзделия.ДоляСтоимостиНаЕдиницу</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Получатель</dataPath>
+        <field>ПобочныеИзделия.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.СписатьНаРасходы</dataPath>
+        <field>ВыходныеИзделия.СписатьНаРасходы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.СтатьяРасходов</dataPath>
+        <field>ВыходныеИзделия.СтатьяРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.АналитикаРасходов</dataPath>
+        <field>ВыходныеИзделия.АналитикаРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.АналитикаАктивовПассивов</dataPath>
+        <field>ВыходныеИзделия.АналитикаАктивовПассивов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ИдентификаторСтроки</dataPath>
+        <field>ВыходныеИзделия.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Отменено</dataPath>
+        <field>ПобочныеИзделияСерии.Отменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.КодСтроки</dataPath>
+        <field>ВыходныеИзделия.КодСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ОформитьОтчетДавальцу</dataPath>
+        <field>ВыходныеИзделия.ОформитьОтчетДавальцу</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ОбработатьПоСпецификации</dataPath>
+        <field>ВыходныеИзделия.ОбработатьПоСпецификации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Отменено</dataPath>
+        <field>ВыходныеИзделия.Отменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Подразделение</dataPath>
+        <field>ЭкономияМатериалов.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.ЭтапПотребитель</dataPath>
+        <field>ВыходныеИзделия.ЭтапПотребитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Сумма</dataPath>
+        <field>ВыходныеИзделия.Сумма</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.АналитикаУчетаНоменклатуры</dataPath>
+        <field>ПобочныеИзделия.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Период</dataPath>
+        <field>ВыходныеИзделия.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.Подразделение</dataPath>
+        <field>ВыходныеИзделия.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.НастройкаСчетовУчета</dataPath>
+        <field>ВыходныеИзделия.НастройкаСчетовУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.СведенияАвтовыбора</dataPath>
+        <field>ВыходныеИзделия.СведенияАвтовыбора</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделия.УдалитьКлючНоменклатура</dataPath>
+        <field>ВыходныеИзделия.УдалитьКлючНоменклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты.ТекстоваяСтрока</dataPath>
+        <field>ДополнительныеРеквизиты.ТекстоваяСтрока</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ВыходныеИзделия</dataPath>
+        <field>ВыходныеИзделия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.СтатусУказанияСерийПолучатель</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.СтатусУказанияСерийПолучатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Ссылка</dataPath>
+        <field>ВыходныеИзделияСерии.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Сумма</dataPath>
+        <field>ПобочныеИзделия.Сумма</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.НомерСтроки</dataPath>
+        <field>ВыходныеИзделияСерии.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Серия</dataPath>
+        <field>ВыходныеИзделияСерии.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Номенклатура</dataPath>
+        <field>ВыходныеИзделияСерии.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Характеристика</dataPath>
+        <field>ВыходныеИзделияСерии.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Получатель</dataPath>
+        <field>ВыходныеИзделияСерии.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.ВидРабот</dataPath>
+        <field>Трудозатраты.ВидРабот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Период</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Назначение</dataPath>
+        <field>ВыходныеИзделияСерии.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Произведено</dataPath>
+        <field>ВыходныеИзделияСерии.Произведено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Количество</dataPath>
+        <field>ВыходныеИзделияСерии.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.КодСтроки</dataPath>
+        <field>ЭкономияМатериалов.КодСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.ДатаПроизводства</dataPath>
+        <field>ВыходныеИзделияСерии.ДатаПроизводства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВыходныеИзделияСерии.Отменено</dataPath>
+        <field>ВыходныеИзделияСерии.Отменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ШтрихкодыУпаковок.НомерСтроки</dataPath>
+        <field>ШтрихкодыУпаковок.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ВыходныеИзделияСерии</dataPath>
+        <field>ВыходныеИзделияСерии</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Ссылка</dataPath>
+        <field>ПобочныеИзделия.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.НомерСтроки</dataPath>
+        <field>ПобочныеИзделия.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Номенклатура</dataPath>
+        <field>ПобочныеИзделия.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Характеристика</dataPath>
+        <field>ПобочныеИзделия.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.КоличествоУпаковок</dataPath>
+        <field>ПобочныеИзделия.КоличествоУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.Подразделение</dataPath>
+        <field>Трудозатраты.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Количество</dataPath>
+        <field>ПобочныеИзделия.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Назначение</dataPath>
+        <field>ПобочныеИзделия.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Серия</dataPath>
+        <field>ПобочныеИзделия.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Произведено</dataPath>
+        <field>ПобочныеИзделия.Произведено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.ПричинаОтмены</dataPath>
+        <field>Трудозатраты.ПричинаОтмены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ДатаПроизводства</dataPath>
+        <field>ПобочныеИзделия.ДатаПроизводства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СтатусУказанияСерийОтправитель</dataPath>
+        <field>ПобочныеИзделия.СтатусУказанияСерийОтправитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Цена</dataPath>
+        <field>ПобочныеИзделия.Цена</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СписатьНаРасходы</dataPath>
+        <field>ПобочныеИзделия.СписатьНаРасходы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.КоличествоПоРНПТ</dataPath>
+        <field>ВидыЗапасовМатериалы.КоличествоПоРНПТ</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СтатьяРасходов</dataPath>
+        <field>ПобочныеИзделия.СтатьяРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.НомерГТД</dataPath>
+        <field>ВидыЗапасовИзделия.НомерГТД</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.АналитикаАктивовПассивов</dataPath>
+        <field>ПобочныеИзделия.АналитикаАктивовПассивов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ИдентификаторСтроки</dataPath>
+        <field>ПобочныеИзделия.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СтатьяКалькуляции</dataPath>
+        <field>ПобочныеИзделия.СтатьяКалькуляции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.КодСтроки</dataPath>
+        <field>ПобочныеИзделия.КодСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ОформитьОтчетДавальцу</dataPath>
+        <field>ПобочныеИзделия.ОформитьОтчетДавальцу</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ОбработатьПоСпецификации</dataPath>
+        <field>ПобочныеИзделия.ОбработатьПоСпецификации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ИспользуетсяАвтовыбор</dataPath>
+        <field>ПобочныеИзделия.ИспользуетсяАвтовыбор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.СведенияАвтовыбора</dataPath>
+        <field>ПобочныеИзделия.СведенияАвтовыбора</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Спецификация</dataPath>
+        <field>ПобочныеИзделия.Спецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Отменено</dataPath>
+        <field>ПобочныеИзделия.Отменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ПричинаОтмены</dataPath>
+        <field>ПобочныеИзделия.ПричинаОтмены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.ЭтапПотребитель</dataPath>
+        <field>ПобочныеИзделия.ЭтапПотребитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Период</dataPath>
+        <field>ПобочныеИзделия.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.Подразделение</dataPath>
+        <field>ПобочныеИзделия.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.НастройкаСчетовУчета</dataPath>
+        <field>ПобочныеИзделия.НастройкаСчетовУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделия.УдалитьКлючНоменклатура</dataPath>
+        <field>ПобочныеИзделия.УдалитьКлючНоменклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Характеристика</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Ссылка</dataPath>
+        <field>ПобочныеИзделияСерии.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.НомерСтроки</dataPath>
+        <field>ПобочныеИзделияСерии.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Номенклатура</dataPath>
+        <field>ПобочныеИзделияСерии.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Получатель</dataPath>
+        <field>ПобочныеИзделияСерии.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ВидыЗапасовМатериалы</dataPath>
+        <field>ВидыЗапасовМатериалы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Назначение</dataPath>
+        <field>ПобочныеИзделияСерии.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Количество</dataPath>
+        <field>ПобочныеИзделияСерии.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Ссылка</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.ДатаПроизводства</dataPath>
+        <field>ПобочныеИзделияСерии.ДатаПроизводства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Серия</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПобочныеИзделияСерии.Подразделение</dataPath>
+        <field>ПобочныеИзделияСерии.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ПобочныеИзделияСерии</dataPath>
+        <field>ПобочныеИзделияСерии</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.НомерСтроки</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Упаковка</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Упаковка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.КоличествоУпаковок</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.КоличествоУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Номенклатура</dataPath>
+        <field>ЭкономияМатериалов.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Количество</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ВариантОбеспечения</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ВариантОбеспечения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ДатаОтгрузки</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ДатаОтгрузки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ВидыЗапасовИзделия</dataPath>
+        <field>ВидыЗапасовИзделия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Производится</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Производится</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Спецификация</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Спецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.ИдентификаторСтроки</dataPath>
+        <field>ЭкономияМатериалов.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.СтатусУказанияСерий</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.СтатусУказанияСерий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.СтатусУказанияСерийОтправитель</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.СтатусУказанияСерийОтправитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>РасходМатериаловИРабот</dataPath>
+        <field>РасходМатериаловИРабот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.КодСтроки</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.КодСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.НомерСтроки</dataPath>
+        <field>Трудозатраты.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ИспользуетсяАвтовыбор</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ИспользуетсяАвтовыбор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ПрименениеМатериала</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ПрименениеМатериала</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.КлючСвязиСпецификация</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.КлючСвязиСпецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.СтатьяКалькуляции</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.СтатьяКалькуляции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.КлючСвязиСпецификация</dataPath>
+        <field>НаборыМатериаловИРабот.КлючСвязиСпецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Обособленно</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Обособленно</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.Отменено</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.Отменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ПричинаОтмены</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ПричинаОтмены</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.КорАналитикаУчетаНоменклатуры</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.КорАналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.ВариантОбеспеченияДоИзмененияОбновлениемИБ</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.ВариантОбеспеченияДоИзмененияОбновлениемИБ</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.КлючСвязиНабор</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.КлючСвязиНабор</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбеспечениеМатериаламиИРаботами.КлючНоменклатура</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами.КлючНоменклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.АналитикаУчетаНоменклатуры</dataPath>
+        <field>ВидыЗапасовМатериалы.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ОбеспечениеМатериаламиИРаботами</dataPath>
+        <field>ОбеспечениеМатериаламиИРаботами</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Ссылка</dataPath>
+        <field>РасходМатериаловИРабот.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Серия</dataPath>
+        <field>ЭкономияМатериалов.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Номенклатура</dataPath>
+        <field>РасходМатериаловИРабот.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Назначение</dataPath>
+        <field>ЭкономияМатериаловСерии.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Характеристика</dataPath>
+        <field>РасходМатериаловИРабот.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.Подразделение</dataPath>
+        <field>ВидыЗапасовИзделия.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.КоличествоУпаковок</dataPath>
+        <field>РасходМатериаловИРабот.КоличествоУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Количество</dataPath>
+        <field>РасходМатериаловИРабот.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.АналитикаРасходов</dataPath>
+        <field>ВидыЗапасовМатериалы.АналитикаРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.ДатаРасхода</dataPath>
+        <field>РасходМатериаловИРабот.ДатаРасхода</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Серия</dataPath>
+        <field>РасходМатериаловИРабот.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.СтатусУказанияСерий</dataPath>
+        <field>РасходМатериаловИРабот.СтатусУказанияСерий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.ВариантНаладки</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.ВариантНаладки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.АналитикаРасходов</dataPath>
+        <field>ЭкономияМатериалов.АналитикаРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.СтатьяКалькуляции</dataPath>
+        <field>РасходМатериаловИРабот.СтатьяКалькуляции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.АналитикаУчетаНоменклатуры</dataPath>
+        <field>РасходМатериаловИРабот.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Получатель</dataPath>
+        <field>ЭкономияМатериалов.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Период</dataPath>
+        <field>РасходМатериаловИРабот.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.КорАналитикаУчетаНоменклатуры</dataPath>
+        <field>РасходМатериаловИРабот.КорАналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.ИдентификаторСтроки</dataPath>
+        <field>РасходМатериаловИРабот.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РасходМатериаловИРабот.Подразделение</dataPath>
+        <field>РасходМатериаловИРабот.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.ИдентификаторСтроки</dataPath>
+        <field>ВидыЗапасовМатериалы.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Ссылка</dataPath>
+        <field>ЭкономияМатериалов.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Характеристика</dataPath>
+        <field>ЭкономияМатериаловСерии.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.НомерСтроки</dataPath>
+        <field>ЭкономияМатериалов.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Характеристика</dataPath>
+        <field>ЭкономияМатериалов.Характеристика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.Ссылка</dataPath>
+        <field>НаборыМатериаловИРабот.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ИдентификаторСтроки</dataPath>
+        <field>ВидыЗапасовИзделия.ИдентификаторСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.КоличествоУпаковок</dataPath>
+        <field>ЭкономияМатериалов.КоличествоУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Количество</dataPath>
+        <field>ЭкономияМатериалов.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Упаковка</dataPath>
+        <field>ЭкономияМатериалов.Упаковка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.КорАналитикаУчетаНоменклатуры</dataPath>
+        <field>ВидыЗапасовМатериалы.КорАналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.СтатусУказанияСерийОтправитель</dataPath>
+        <field>ЭкономияМатериалов.СтатусУказанияСерийОтправитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.АналитикаУчетаНоменклатуры</dataPath>
+        <field>ВидыЗапасовИзделия.АналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.СтатусУказанияСерийПолучатель</dataPath>
+        <field>ЭкономияМатериалов.СтатусУказанияСерийПолучатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.СписатьНаРасходы</dataPath>
+        <field>ЭкономияМатериалов.СписатьНаРасходы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.ДатаОперации</dataPath>
+        <field>ЭкономияМатериалов.ДатаОперации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.АналитикаАктивовПассивов</dataPath>
+        <field>ЭкономияМатериалов.АналитикаАктивовПассивов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.УдалитьОбособить</dataPath>
+        <field>ЭкономияМатериалов.УдалитьОбособить</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Период</dataPath>
+        <field>ЭкономияМатериалов.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.КорАналитикаУчетаНоменклатуры</dataPath>
+        <field>ЭкономияМатериалов.КорАналитикаУчетаНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.НастройкаСчетовУчета</dataPath>
+        <field>ЭкономияМатериалов.НастройкаСчетовУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериалов.Назначение</dataPath>
+        <field>ЭкономияМатериалов.Назначение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ЭкономияМатериалов</dataPath>
+        <field>ЭкономияМатериалов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.НомерСтроки</dataPath>
+        <field>ЭкономияМатериаловСерии.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.Спецификация</dataPath>
+        <field>НаборыМатериаловИРабот.Спецификация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты.НомерСтроки</dataPath>
+        <field>ДополнительныеРеквизиты.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Серия</dataPath>
+        <field>ЭкономияМатериаловСерии.Серия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Номенклатура</dataPath>
+        <field>ЭкономияМатериаловСерии.Номенклатура</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.УдалитьОбособить</dataPath>
+        <field>ЭкономияМатериаловСерии.УдалитьОбособить</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭкономияМатериаловСерии.Подразделение</dataPath>
+        <field>ЭкономияМатериаловСерии.Подразделение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.Количество</dataPath>
+        <field>Трудозатраты.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.СтатьяКалькуляции</dataPath>
+        <field>Трудозатраты.СтатьяКалькуляции</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.НазначениеРабот</dataPath>
+        <field>Трудозатраты.НазначениеРабот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.КодСтроки</dataPath>
+        <field>Трудозатраты.КодСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.Выполнено</dataPath>
+        <field>Трудозатраты.Выполнено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.ДатаВыполнения</dataPath>
+        <field>Трудозатраты.ДатаВыполнения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.Период</dataPath>
+        <field>ВидыЗапасовМатериалы.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.НастройкаСчетовУчета</dataPath>
+        <field>ВидыЗапасовИзделия.НастройкаСчетовУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.Отменено</dataPath>
+        <field>Трудозатраты.Отменено</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Трудозатраты.КлючВидРабот</dataPath>
+        <field>Трудозатраты.КлючВидРабот</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.АналитикаАктивовПассивов</dataPath>
+        <field>ВидыЗапасовИзделия.АналитикаАктивовПассивов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>Трудозатраты</dataPath>
+        <field>Трудозатраты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.Ссылка</dataPath>
+        <field>ВидыРабочихЦентров.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.НомерСтроки</dataPath>
+        <field>ВидыРабочихЦентров.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.ВидРабочегоЦентра</dataPath>
+        <field>ВидыРабочихЦентров.ВидРабочегоЦентра</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.ЕдиницаИзмерения</dataPath>
+        <field>ВидыРабочихЦентров.ЕдиницаИзмерения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыРабочихЦентров.КлючСвязи</dataPath>
+        <field>ВидыРабочихЦентров.КлючСвязи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты.Свойство</dataPath>
+        <field>ДополнительныеРеквизиты.Свойство</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ВидыРабочихЦентров</dataPath>
+        <field>ВидыРабочихЦентров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.Ссылка</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ШтрихкодыУпаковок.Ссылка</dataPath>
+        <field>ШтрихкодыУпаковок.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.НомерСтроки</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.НомерСтроки</dataPath>
+        <field>ВидыЗапасовМатериалы.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.ВидРабочегоЦентра</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.ВидРабочегоЦентра</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.ВремяРаботы</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.ВремяРаботы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.ЕдиницаИзмерения</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.ЕдиницаИзмерения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.Использовать</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.Использовать</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.КлючСвязиВидыРабочихЦентров</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.КлючСвязиВидыРабочихЦентров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Последователи.Ссылка</dataPath>
+        <field>Последователи.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АльтернативныеВидыРабочихЦентров.КлючСвязи</dataPath>
+        <field>АльтернативныеВидыРабочихЦентров.КлючСвязи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗанятостьВидовРабочихЦентров.Ссылка</dataPath>
+        <field>ЗанятостьВидовРабочихЦентров.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗанятостьВидовРабочихЦентров.НомерСтроки</dataPath>
+        <field>ЗанятостьВидовРабочихЦентров.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗанятостьВидовРабочихЦентров.ВидРабочегоЦентра</dataPath>
+        <field>ЗанятостьВидовРабочихЦентров.ВидРабочегоЦентра</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ДоляСтоимости</dataPath>
+        <field>ВидыЗапасовИзделия.ДоляСтоимости</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗанятостьВидовРабочихЦентров.ДатаИнтервала</dataPath>
+        <field>ЗанятостьВидовРабочихЦентров.ДатаИнтервала</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗанятостьВидовРабочихЦентров.Количество</dataPath>
+        <field>ЗанятостьВидовРабочихЦентров.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ЗанятостьВидовРабочихЦентров</dataPath>
+        <field>ЗанятостьВидовРабочихЦентров</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Последователи.НомерСтроки</dataPath>
+        <field>Последователи.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Последователи.Этап</dataPath>
+        <field>Последователи.Этап</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>Последователи</dataPath>
+        <field>Последователи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.Ссылка</dataPath>
+        <field>ВидыЗапасовИзделия.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ВидЗапасов</dataPath>
+        <field>ВидыЗапасовИзделия.ВидЗапасов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.Количество</dataPath>
+        <field>ВидыЗапасовИзделия.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ДатаОперации</dataPath>
+        <field>ВидыЗапасовИзделия.ДатаОперации</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ХозяйственнаяОперация</dataPath>
+        <field>ВидыЗапасовИзделия.ХозяйственнаяОперация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.СписатьНаРасходы</dataPath>
+        <field>ВидыЗапасовИзделия.СписатьНаРасходы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.Получатель</dataPath>
+        <field>ВидыЗапасовИзделия.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.СтатьяРасходов</dataPath>
+        <field>ВидыЗапасовИзделия.СтатьяРасходов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.ИдентификаторФинЗаписи</dataPath>
+        <field>ВидыЗапасовИзделия.ИдентификаторФинЗаписи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.КодСтроки</dataPath>
+        <field>ВидыЗапасовИзделия.КодСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовИзделия.Период</dataPath>
+        <field>ВидыЗапасовИзделия.Период</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.НомерГТД</dataPath>
+        <field>ВидыЗапасовМатериалы.НомерГТД</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.Количество</dataPath>
+        <field>ВидыЗапасовМатериалы.Количество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.ХозяйственнаяОперация</dataPath>
+        <field>ВидыЗапасовМатериалы.ХозяйственнаяОперация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.КорВидЗапасов</dataPath>
+        <field>ВидыЗапасовМатериалы.КорВидЗапасов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.СписатьНаРасходы</dataPath>
+        <field>ВидыЗапасовМатериалы.СписатьНаРасходы</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.Получатель</dataPath>
+        <field>ВидыЗапасовМатериалы.Получатель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидыЗапасовМатериалы.НастройкаСчетовУчета</dataPath>
+        <field>ВидыЗапасовМатериалы.НастройкаСчетовУчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты.Ссылка</dataPath>
+        <field>ДополнительныеРеквизиты.Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты.Значение</dataPath>
+        <field>ДополнительныеРеквизиты.Значение</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ШтрихкодыУпаковок.ШтрихкодУпаковки</dataPath>
+        <field>ШтрихкодыУпаковок.ШтрихкодУпаковки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaNestedDataSet">
+        <dataPath>ШтрихкодыУпаковок</dataPath>
+        <field>ШтрихкодыУпаковок</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.НомерСтроки</dataPath>
+        <field>НаборыМатериаловИРабот.НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.КлючСвязиРодитель</dataPath>
+        <field>НаборыМатериаловИРабот.КлючСвязиРодитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НаборыМатериаловИРабот.СпецификацияРодитель</dataPath>
+        <field>НаборыМатериаловИРабот.СпецификацияРодитель</field>
+      </fields>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>Статус</name>
+    <title>
+      <key>ru</key>
+      <value>Статус</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Status</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>EnumRef.СтатусыЭтаповПроизводства2_2</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Подразделение</name>
+    <title>
+      <key>ru</key>
+      <value>Подразделение-исполнитель</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Assignee business unit</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Подразделение</segments>
+    </settingsSavedData>
+  </attributes>
+  <attributes>
+    <name>Распоряжение</name>
+    <title>
+      <key>ru</key>
+      <value>Заказ</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Order</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>DocumentRef.ЗаказНаПроизводство2_2</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>СтруктураБыстрогоОтбора</name>
+    <title>
+      <key>ru</key>
+      <value>Структура быстрого отбора</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Quick filter structure</value>
+    </title>
+    <id>6</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПараметрыПодключаемыхКоманд</name>
+    <title>
+      <key>ru</key>
+      <value>Параметры подключаемых команд</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Attachable command parameters</value>
+    </title>
+    <id>7</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ИспользоватьПодключаемоеОборудование</name>
+    <title>
+      <key>ru</key>
+      <value>Использовать подключаемое оборудование</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Use peripherals</value>
+    </title>
+    <id>8</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ПоддерживаемыеТипыПодключаемогоОборудования</name>
+    <title>
+      <key>ru</key>
+      <value>Поддерживаемые типы подключаемого оборудования</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Supported peripheral types</value>
+    </title>
+    <id>9</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers/>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <formCommands>
+    <name>ИзменитьВыделенные</name>
+    <title>
+      <key>ru</key>
+      <value>Изменить выделенные</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Bulk actions</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Изменить выделенные объекты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Edit selected objects</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ИзменитьВыделенные</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьПисьмо</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.ИнтеграцияС1СДокументооборотСоздатьБизнесПроцесс</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.СозданиеСвязанныхОбъектов</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.РезервироватьЗаказ</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.ОтгрузитьЗаказ</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.КОбеспечениюЗаказ</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.НеОбеспечиватьЗаказ</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.СостояниеОбеспеченияСпискаЗаказов</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>CommonCommand.РезервироватьПоМереПоступленияЗаказ</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </commandBar>
+  </commandInterface>
+  <extInfo xsi:type="form:DynamicListFormExtInfo"/>
+</form:Form>

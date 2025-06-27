@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0537b46e-21ef-44c3-a8db-2418084aa859">
+  <producedTypes>
+    <objectType typeId="034cf5d7-b227-4180-b946-c61dde8d9f96" valueTypeId="d669c18d-096e-40a3-a0bf-3f3f44391ada"/>
+    <managerType typeId="48636d77-6009-4173-8fda-7ef2ca6426cd" valueTypeId="5c9ad7bd-4bee-491a-bf7a-72e617d5dd3f"/>
+  </producedTypes>
+  <name>МашиночитаемыеДоверенностиОблачногоЭДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Машиночитаемые доверенности облачного ЭДО</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Machine-readable letters of authority of cloud EDI</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="1a052489-e267-47b7-8e69-e52ad9a10d32">
+    <name>ПросмотрДоверенности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр доверенности</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>View authorization letter</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="50684e2e-4789-46c2-ac6b-9f57ecfcb906">
+    <name>ВыгрузитьВОблачныйЭДО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузить в облачный ЭДО</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export to cloud EDI</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.МЧД003</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

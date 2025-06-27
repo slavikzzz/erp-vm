@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <title>
+    <key>ru</key>
+    <value>Настройка проверки РНПТ</value>
+  </title>
+  <title>
+    <key>en</key>
+    <value>RNPT check setup</value>
+  </title>
+  <items xsi:type="form:FormField">
+    <name>ИспользоватьПроверкуРНПТ</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Автоматически проверять РНПТ в документах</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Automatically check RNPT in documents</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>НаборКонстант.ИспользоватьПроверкуРНПТ</segments>
+    </dataPath>
+    <titleLocation>Right</titleLocation>
+    <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+    <handlers>
+      <event>OnChange</event>
+      <name>ИспользоватьПроверкуРНПТПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ИспользоватьПроверкуРНПТРасширеннаяПодсказка</name>
+      <id>3</id>
+      <title>
+        <key>ru</key>
+        <value>Сверяет данные о РНПТ в документе с данными ФНС:
+- наличие РНПТ в системе прослеживаемости
+- количество товара не превышает количество ввезенного товара
+- категория товара (первые 4 цифры ТН ВЭД) в документе совпадает с данными ФНС 
+</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Checks RNPT data with the Federal Tax Service data in the document:
+- RNPT is available in the traceability system.
+- The number of items does not exceed the number of imported items.
+- The item category (the first four digits of the FEACN) in the document corresponds to the Federal Tax Service data. 
+</value>
+      </title>
+      <formatted>true</formatted>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ИспользоватьПроверкуРНПТКонтекстноеМеню</name>
+      <id>2</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>НаборКонстант</name>
+    <id>1</id>
+    <valueType>
+      <types>ConstantsSet</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ВалютаРегламентированногоУчета</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>НаборКонстант.ИспользоватьПроверкуРНПТ</segments>
+    </notDefaultUseAlwaysAttributes>
+    <main>true</main>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ConstantsFormExtInfo"/>
+</form:Form>

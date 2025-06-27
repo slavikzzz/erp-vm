@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormGroup">
+    <name>ГруппаВыбораРежимаДляНастройкиПередачиМатериалов</name>
+    <id>335</id>
+    <items xsi:type="form:FormField">
+      <name>РежимНоменклатурыВЦеломДляНастройкиПередачиМатериалов</name>
+      <id>336</id>
+      <titleFont xsi:type="core:FontRef">
+        <font>System.DefaultGUIFont</font>
+        <bold>true</bold>
+        <italic>false</italic>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+      </titleFont>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>РежимНоменклатурыВЦелом</segments>
+      </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>РежимНоменклатурыВЦеломДляНастройкиПередачиМатериаловПриИзменении</name>
+      </handlers>
+      <extendedTooltip>
+        <name>РежимНоменклатурыВЦеломДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+        <id>409</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>РежимНоменклатурыВЦеломДляНастройкиПередачиМатериаловКонтекстноеМеню</name>
+        <id>337</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <columnsCount>2</columnsCount>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Номенклатуры в целом</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>Products total</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>Да</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <presentation>
+            <key>ru</key>
+            <value>Характеристики:</value>
+          </presentation>
+          <presentation>
+            <key>en</key>
+            <value>Characteristics:</value>
+          </presentation>
+          <value xsi:type="core:StringValue">
+            <value>Нет</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>СтраницыДоступностьХарактеристикиДляНастройкиПередачиМатериалов</name>
+      <id>338</id>
+      <items xsi:type="form:FormGroup">
+        <name>СтраницаХарактеристикаДоступнаДляНастройкиПередачиМатериалов</name>
+        <id>339</id>
+        <items xsi:type="form:FormField">
+          <name>ХарактеристикаДляНастройкиПередачиМатериалов</name>
+          <id>340</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Характеристика</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ХарактеристикаДляНастройкиПередачиМатериаловПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ХарактеристикаДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+            <id>412</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ХарактеристикаДляНастройкиПередачиМатериаловКонтекстноеМеню</name>
+            <id>341</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>Clearing</event>
+              <name>ХарактеристикаДляНастройкиПередачиМатериаловОчистка</name>
+            </handlers>
+            <width>30</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <clearButton>false</clearButton>
+            <openButton>false</openButton>
+            <autoMarkIncomplete>true</autoMarkIncomplete>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <choiceParameterLinks>
+              <name>Отбор.Владелец</name>
+              <datapath xsi:type="form:DataPath">
+                <segments>ВладелецХарактеристик</segments>
+              </datapath>
+            </choiceParameterLinks>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страница характеристика доступна для настройки передачи материалов</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Page characteristics is available for materials transfer setting</value>
+        </title>
+        <extendedTooltip>
+          <name>СтраницаХарактеристикаДоступнаДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+          <id>411</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>СтраницаХарактеристикаНедоступнаДляНастройкиПередачиМатериалов</name>
+        <id>342</id>
+        <items xsi:type="form:FormField">
+          <name>ХарактеристикаНедоступнаДляНастройкиПередачиМатериалов</name>
+          <id>343</id>
+          <visible>true</visible>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Характеристика</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <extendedTooltip>
+            <name>ХарактеристикаНедоступнаДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+            <id>414</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ХарактеристикаНедоступнаДляНастройкиПередачиМатериаловКонтекстноеМеню</name>
+            <id>344</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <width>30</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>false</horizontalStretch>
+            <wrap>true</wrap>
+            <clearButton>false</clearButton>
+            <openButton>false</openButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <choiceParameterLinks>
+              <name>Отбор.Владелец</name>
+              <datapath xsi:type="form:DataPath">
+                <segments>ВладелецХарактеристик</segments>
+              </datapath>
+            </choiceParameterLinks>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страница характеристика недоступна для настройки передачи материалов</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Page characteristics is not available for materials transfer setting</value>
+        </title>
+        <extendedTooltip>
+          <name>СтраницаХарактеристикаНедоступнаДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+          <id>413</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Page</type>
+        <extInfo xsi:type="form:PageGroupExtInfo">
+          <group>Vertical</group>
+          <showTitle>true</showTitle>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страницы доступность характеристики для настройки передачи материалов</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Pages availability material transfer settings characteristics</value>
+      </title>
+      <extendedTooltip>
+        <name>СтраницыДоступностьХарактеристикиДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+        <id>410</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Pages</type>
+      <extInfo xsi:type="form:PagesGroupExtInfo">
+        <currentRowUse>Auto</currentRowUse>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Выбора режима для настройки передачи материалов</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Mode selection to set up the material transfer</value>
+    </title>
+    <enableContentChange>true</enableContentChange>
+    <extendedTooltip>
+      <name>ГруппаВыбораРежимаДляНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+      <id>408</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>НастройкаПередачиМатериаловВПроизводство</name>
+    <id>278</id>
+    <title>
+      <key>ru</key>
+      <value>Настройка передачи материалов в производство</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Configure material transfer to production</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>НастройкаПередачиМатериаловВПроизводство</segments>
+    </dataPath>
+    <titleLocation>None</titleLocation>
+    <excludedCommands>Add</excludedCommands>
+    <excludedCommands>Change</excludedCommands>
+    <excludedCommands>Copy</excludedCommands>
+    <excludedCommands>Delete</excludedCommands>
+    <excludedCommands>EndEdit</excludedCommands>
+    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>MoveUp</excludedCommands>
+    <excludedCommands>SortListAsc</excludedCommands>
+    <excludedCommands>SortListDesc</excludedCommands>
+    <items xsi:type="form:FormField">
+      <name>НастройкаПередачиМатериаловВПроизводствоПодразделение</name>
+      <id>281</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НастройкаПередачиМатериаловВПроизводство.Подразделение</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоПодразделениеРасширеннаяПодсказка</name>
+        <id>421</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоПодразделениеКонтекстноеМеню</name>
+        <id>282</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>StartChoice</event>
+          <name>НастройкаПередачиМатериаловВПроизводствоПодразделениеНачалоВыбора</name>
+        </handlers>
+        <handlers>
+          <event>Clearing</event>
+          <name>НастройкаПередачиМатериаловВПроизводствоПодразделениеОчистка</name>
+        </handlers>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <choiceButton>false</choiceButton>
+        <clearButton>false</clearButton>
+        <openButton>true</openButton>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НастройкаПередачиМатериаловВПроизводствоСклад</name>
+      <id>287</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НастройкаПередачиМатериаловВПроизводство.Склад</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоСкладРасширеннаяПодсказка</name>
+        <id>422</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоСкладКонтекстноеМеню</name>
+        <id>288</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НастройкаПередачиМатериаловВПроизводствоОснованиеДляПолучения</name>
+      <id>289</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НастройкаПередачиМатериаловВПроизводство.ОснованиеДляПолучения</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоОснованиеДляПолученияРасширеннаяПодсказка</name>
+        <id>423</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоОснованиеДляПолученияКонтекстноеМеню</name>
+        <id>290</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НастройкаПередачиМатериаловВПроизводствоСпособНастройки</name>
+      <id>318</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>НастройкаПередачиМатериаловВПроизводство.СпособНастройки</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоСпособНастройкиРасширеннаяПодсказка</name>
+        <id>424</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоСпособНастройкиКонтекстноеМеню</name>
+        <id>319</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <autoCommandBar>
+      <name>НастройкаПередачиМатериаловВПроизводствоКоманднаяПанель</name>
+      <id>280</id>
+      <items xsi:type="form:Button">
+        <name>НастройкаПередачиМатериаловВПроизводствоЗаполнитьСкладНастройкиПередачиМатериалов</name>
+        <id>326</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>НастройкаПередачиМатериаловВПроизводствоЗаполнитьСкладНастройкиПередачиМатериаловРасширеннаяПодсказка</name>
+          <id>415</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ЗаполнитьСкладНастройкиПередачиМатериалов</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>НастройкаПередачиМатериаловВПроизводствоГруппаЗаполнитьОснование</name>
+        <id>321</id>
+        <items xsi:type="form:Button">
+          <name>НастройкаПередачиМатериаловВПроизводствоЗаполнитьОснованиеЗначениемПоЗаказуНаПроизводство</name>
+          <id>322</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>НастройкаПередачиМатериаловВПроизводствоЗаполнитьОснованиеЗначениемПоЗаказуНаПроизводствоРасширеннаяПодсказка</name>
+            <id>417</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ЗаполнитьОснованиеЗначениемПоЗаказуНаПроизводство</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>НастройкаПередачиМатериаловВПроизводствоЗаполнитьОснованиеЗначениемПоЗаказуНаВнутреннееПотребление</name>
+          <id>323</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>НастройкаПередачиМатериаловВПроизводствоЗаполнитьОснованиеЗначениемПоЗаказуНаВнутреннееПотреблениеРасширеннаяПодсказка</name>
+            <id>418</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <commandName>Form.Command.ЗаполнитьОснованиеЗначениемПоЗаказуНаВнутреннееПотребление</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Заполнить основание</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Fill in the basis</value>
+        </title>
+        <extendedTooltip>
+          <name>НастройкаПередачиМатериаловВПроизводствоГруппаЗаполнитьОснованиеРасширеннаяПодсказка</name>
+          <id>416</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Popup</type>
+        <extInfo xsi:type="form:PopupGroupExtInfo">
+          <representation>Auto</representation>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>НастройкаПередачиМатериаловВПроизводствоРасшифроватьПоХарактеристикам</name>
+        <id>320</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>НастройкаПередачиМатериаловВПроизводствоРасшифроватьПоХарактеристикамРасширеннаяПодсказка</name>
+          <id>419</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.РасшифроватьПоХарактеристикамНастройкуПередачиМатериалов</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКомандыФормы</name>
+        <id>461</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Команды формы</value>
+        </title>
+        <title>
+          <key>en</key>
+          <value>Form commands</value>
+        </title>
+        <extendedTooltip>
+          <name>ГруппаКомандыФормыРасширеннаяПодсказка</name>
+          <id>462</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <extInfo xsi:type="form:ButtonGroupExtInfo">
+          <commandSource>Form</commandSource>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Button">
+        <name>Справка</name>
+        <id>463</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СправкаРасширеннаяПодсказка</name>
+          <id>464</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.StandardCommand.Help</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <horizontalAlign>Left</horizontalAlign>
+      <autoFill>true</autoFill>
+    </autoCommandBar>
+    <handlers>
+      <event>Selection</event>
+      <name>НастройкаПередачиМатериаловВПроизводствоВыбор</name>
+    </handlers>
+    <searchStringAddition>
+      <name>НастройкаПередачиМатериаловВПроизводствоСтрокаПоиска</name>
+      <id>448</id>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>450</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоСтрокаПоискаКонтекстноеМеню</name>
+        <id>449</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>НастройкаПередачиМатериаловВПроизводство</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <name>НастройкаПередачиМатериаловВПроизводствоСостояниеПросмотра</name>
+      <id>451</id>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>453</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоСостояниеПросмотраКонтекстноеМеню</name>
+        <id>452</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>НастройкаПередачиМатериаловВПроизводство</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <horizontalLocation>Left</horizontalLocation>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <name>НастройкаПередачиМатериаловВПроизводствоУправлениеПоиском</name>
+      <id>454</id>
+      <extendedTooltip>
+        <name>НастройкаПередачиМатериаловВПроизводствоУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>456</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаПередачиМатериаловВПроизводствоУправлениеПоискомКонтекстноеМеню</name>
+        <id>455</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>НастройкаПередачиМатериаловВПроизводство</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>НастройкаПередачиМатериаловВПроизводствоРасширеннаяПодсказка</name>
+      <id>420</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НастройкаПередачиМатериаловВПроизводствоКонтекстноеМеню</name>
+      <id>279</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <autoInsertNewRow>true</autoInsertNewRow>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <enableDrag>true</enableDrag>
+    <rowFilter xsi:type="core:UndefinedValue"/>
+  </items>
+  <commandBarLocation>None</commandBarLocation>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Характеристика</name>
+    <title>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Characteristic</value>
+    </title>
+    <id>2</id>
+    <valueType>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВладелецХарактеристик</name>
+    <title>
+      <key>ru</key>
+      <value>Владелец характеристик</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Item variants owner</value>
+    </title>
+    <id>5</id>
+    <valueType>
+      <types>CatalogRef.ВидыНоменклатуры</types>
+      <types>CatalogRef.Номенклатура</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ЕдиницаИзмерения</name>
+    <title>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Unit of measure</value>
+    </title>
+    <id>3</id>
+    <valueType>
+      <types>CatalogRef.УпаковкиЕдиницыИзмерения</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>НастройкаПередачиМатериаловВПроизводство</name>
+    <title>
+      <key>ru</key>
+      <value>Настройка передачи материалов в производство</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Configure material transfer to production</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>ValueTable</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <functionalOptions>FunctionalOption.ИспользоватьПроизводство</functionalOptions>
+    <columns>
+      <name>Подразделение</name>
+      <title>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Business unit</value>
+      </title>
+      <id>1</id>
+      <valueType>
+        <types>CatalogRef.СтруктураПредприятия</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>Склад</name>
+      <title>
+        <key>ru</key>
+        <value>Склад материалов</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Materials warehouse</value>
+      </title>
+      <id>2</id>
+      <valueType>
+        <types>CatalogRef.Склады</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+      <functionalOptions>FunctionalOption.ИспользоватьНесколькоСкладов</functionalOptions>
+    </columns>
+    <columns>
+      <name>ОснованиеДляПолучения</name>
+      <title>
+        <key>ru</key>
+        <value>Основание для получения</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Receipt basis</value>
+      </title>
+      <id>3</id>
+      <valueType>
+        <types>EnumRef.ОснованияДляПолученияМатериаловВПроизводстве</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>СпособНастройки</name>
+      <title>
+        <key>ru</key>
+        <value>Способ настройки</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Setup method</value>
+      </title>
+      <id>4</id>
+      <valueType>
+        <types>String</types>
+        <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+  </attributes>
+  <attributes>
+    <name>РежимНоменклатурыВЦелом</name>
+    <title>
+      <key>ru</key>
+      <value>Настроить параметры для</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Configure settings for</value>
+    </title>
+    <id>11</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>КэшируемаяХарактеристика</name>
+    <title>
+      <key>ru</key>
+      <value>Кэшируемая характеристика</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Cached characteristic</value>
+    </title>
+    <id>14</id>
+    <valueType>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>Объект</name>
+    <title>
+      <key>ru</key>
+      <value>Объект</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Object</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>DataProcessorObject.НастройкаПередачиМатериаловВПроизводство</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+  </attributes>
+  <formCommands>
+    <name>РасшифроватьПоХарактеристикамНастройкуПередачиМатериалов</name>
+    <title>
+      <key>ru</key>
+      <value>Расшифровать по характеристикам</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Drill down by characteristics</value>
+    </title>
+    <id>9</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Расшифровать по характеристикам</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Drill down by characteristics</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>РасшифроватьПоХарактеристикамНастройкуПередачиМатериалов</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаполнитьОснованиеЗначениемПоЗаказуНаПроизводство</name>
+    <title>
+      <key>ru</key>
+      <value>По заказу на производство</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>By production order</value>
+    </title>
+    <id>10</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Заполнить основание значением &quot;По заказу на производство&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fill in the basis with value &quot;By production order&quot;</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>КомандаЗаполнитьОснованиеЗначениемПоЗаказуНаПроизводство</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаполнитьОснованиеЗначениемПоЗаказуНаВнутреннееПотребление</name>
+    <title>
+      <key>ru</key>
+      <value>По заказу на передачу в производство</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>By order of transfer to production</value>
+    </title>
+    <id>11</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Заполнить основание значением &quot;По заказу на передачу в производство&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fill in the basis with value &quot;By order of transfer to production&quot;</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>КомандаЗаполнитьОснованиеЗначениемПоЗаказуНаВнутреннееПотребление</name>
+      </handler>
+    </action>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаполнитьСкладНастройкиПередачиМатериалов</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить склад</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Fill in the warehouse</value>
+    </title>
+    <id>12</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Заполнить склад</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fill in the warehouse</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>КомандаЗаполнитьСкладНастройкиПередачиМатериалов</name>
+      </handler>
+    </action>
+    <functionalOptions>FunctionalOption.ИспользоватьНесколькоСкладов</functionalOptions>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>Номенклатура</name>
+    <valueType>
+      <types>CatalogRef.Номенклатура</types>
+    </valueType>
+    <keyParameter>true</keyParameter>
+  </parameters>
+  <parameters>
+    <name>ЕстьДоступКНастройкеЛогистическихПараметров</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <keyParameter>true</keyParameter>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
+</form:Form>

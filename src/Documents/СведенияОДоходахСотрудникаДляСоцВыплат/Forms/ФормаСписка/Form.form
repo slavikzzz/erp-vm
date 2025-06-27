@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
+  <items xsi:type="form:FormGroup">
+    <name>СписокКомпоновщикНастроекПользовательскиеНастройки</name>
+    <id>34</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Группа пользовательских настроек</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>User settings group</value>
+    </title>
+    <extendedTooltip>
+      <name>СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка</name>
+      <id>35</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>СписокНастройкиОтбора</name>
+    <id>36</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Дополнительные условия</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Additional conditions</value>
+    </title>
+    <extendedTooltip>
+      <name>СписокНастройкиОтбораРасширеннаяПодсказка</name>
+      <id>37</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>UsualGroup</type>
+    <extInfo xsi:type="form:UsualGroupExtInfo">
+      <group>Vertical</group>
+      <showLeftMargin>true</showLeftMargin>
+      <united>true</united>
+      <showTitle>true</showTitle>
+      <throughAlign>Auto</throughAlign>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>КоманднаяПанельФормы</name>
+    <id>38</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Командная панель формы</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Form command bar</value>
+    </title>
+    <extendedTooltip>
+      <name>КоманднаяПанельФормыРасширеннаяПодсказка</name>
+      <id>39</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>CommandBar</type>
+    <extInfo xsi:type="form:CommandBarExtInfo">
+      <horizontalAlign>Left</horizontalAlign>
+      <commandSource>Form</commandSource>
+    </extInfo>
+  </items>
+  <items xsi:type="form:Table">
+    <name>Список</name>
+    <id>1</id>
+    <title>
+      <key>ru</key>
+      <value>Список</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>List</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Список</segments>
+    </dataPath>
+    <defaultItem>true</defaultItem>
+    <titleLocation>None</titleLocation>
+    <items xsi:type="form:FormField">
+      <name>ЕстьФайлы</name>
+      <id>40</id>
+      <title>
+        <key>ru</key>
+        <value>Есть файлы</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Has files</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ЕстьФайлы</segments>
+      </dataPath>
+      <titleLocation>None</titleLocation>
+      <extendedTooltip>
+        <name>ЕстьФайлыРасширеннаяПодсказка</name>
+        <id>42</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЕстьФайлыКонтекстноеМеню</name>
+        <id>41</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>PictureField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerPicture xsi:type="core:PictureRef">
+        <picture>CommonPicture.Скрепка</picture>
+      </headerPicture>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:ImageFieldExtInfo">
+        <width>2</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>true</horizontalStretch>
+        <verticalStretch>true</verticalStretch>
+        <valuesPicture xsi:type="core:PictureRef">
+          <picture>CommonPicture.КоллекцияСкрепка</picture>
+        </valuesPicture>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+          <width>1</width>
+        </border>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>НалоговыйПериод</name>
+      <id>12</id>
+      <title>
+        <key>ru</key>
+        <value>Год</value>
+      </title>
+      <title>
+        <key>en</key>
+        <value>Year</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.НалоговыйПериод</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НалоговыйПериодРасширеннаяПодсказка</name>
+        <id>28</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НалоговыйПериодКонтекстноеМеню</name>
+        <id>13</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Дата</name>
+      <id>4</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Дата</segments>
+      </dataPath>
+      <defaultItem>true</defaultItem>
+      <extendedTooltip>
+        <name>ДатаРасширеннаяПодсказка</name>
+        <id>29</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДатаКонтекстноеМеню</name>
+        <id>5</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <width>10</width>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Номер</name>
+      <id>6</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Номер</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НомерРасширеннаяПодсказка</name>
+        <id>30</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НомерКонтекстноеМеню</name>
+        <id>7</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <horizontalStretch>false</horizontalStretch>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Организация</name>
+      <id>16</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Организация</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ОрганизацияРасширеннаяПодсказка</name>
+        <id>31</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ОрганизацияКонтекстноеМеню</name>
+        <id>17</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Сотрудник</name>
+      <id>14</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Сотрудник</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СотрудникРасширеннаяПодсказка</name>
+        <id>32</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СотрудникКонтекстноеМеню</name>
+        <id>15</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Комментарий</name>
+      <id>10</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Комментарий</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>КомментарийРасширеннаяПодсказка</name>
+        <id>33</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>КомментарийКонтекстноеМеню</name>
+        <id>11</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Ссылка</name>
+      <id>43</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible/>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Ссылка</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СсылкаРасширеннаяПодсказка</name>
+        <id>45</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СсылкаКонтекстноеМеню</name>
+        <id>44</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <commandBarLocation>None</commandBarLocation>
+    <autoCommandBar>
+      <name>СписокКоманднаяПанель</name>
+      <id>3</id>
+      <horizontalAlign>Left</horizontalAlign>
+    </autoCommandBar>
+    <handlers>
+      <event>OnActivateRow</event>
+      <name>СписокПриАктивизацииСтроки</name>
+    </handlers>
+    <searchStringAddition>
+      <name>СписокСтрокаПоиска</name>
+      <id>19</id>
+      <extendedTooltip>
+        <name>СписокСтрокаПоискаРасширеннаяПодсказка</name>
+        <id>21</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСтрокаПоискаКонтекстноеМеню</name>
+        <id>20</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <source>Список</source>
+      <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchStringAddition>
+    <viewStatusAddition>
+      <name>СписокСостояниеПросмотра</name>
+      <id>22</id>
+      <extendedTooltip>
+        <name>СписокСостояниеПросмотраРасширеннаяПодсказка</name>
+        <id>24</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокСостояниеПросмотраКонтекстноеМеню</name>
+        <id>23</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>ViewStatusAddition</type>
+      <source>Список</source>
+      <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </viewStatusAddition>
+    <searchControlAddition>
+      <name>СписокУправлениеПоиском</name>
+      <id>25</id>
+      <extendedTooltip>
+        <name>СписокУправлениеПоискомРасширеннаяПодсказка</name>
+        <id>27</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СписокУправлениеПоискомКонтекстноеМеню</name>
+        <id>26</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>SearchControlAddition</type>
+      <source>Список</source>
+      <extInfo xsi:type="form:SearchControlAdditionExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+      </extInfo>
+    </searchControlAddition>
+    <extendedTooltip>
+      <name>СписокРасширеннаяПодсказка</name>
+      <id>18</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СписокКонтекстноеМеню</name>
+      <id>2</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <changeRowSet>true</changeRowSet>
+    <changeRowOrder>true</changeRowOrder>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <autoMaxRowsCount>true</autoMaxRowsCount>
+    <selectionMode>MultiRow</selectionMode>
+    <header>true</header>
+    <headerHeight>1</headerHeight>
+    <footerHeight>1</footerHeight>
+    <horizontalScrollBar>AutoUse</horizontalScrollBar>
+    <verticalScrollBar>AutoUse</verticalScrollBar>
+    <horizontalLines>true</horizontalLines>
+    <verticalLines>true</verticalLines>
+    <useAlternationRowColor>true</useAlternationRowColor>
+    <searchOnInput>Auto</searchOnInput>
+    <initialListView>Auto</initialListView>
+    <initialTreeView>ExpandTopLevel</initialTreeView>
+    <horizontalStretch>true</horizontalStretch>
+    <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <rowPictureDataPath xsi:type="form:DataPath">
+      <segments>Список.DefaultPicture</segments>
+    </rowPictureDataPath>
+    <extInfo xsi:type="form:DynamicListTableExtInfo">
+      <handlers>
+        <event>OnGetDataAtServer</event>
+        <name>СписокПриПолученииДанныхНаСервере</name>
+      </handlers>
+      <handlers>
+        <event>BeforeLoadUserSettingsAtServer</event>
+        <name>СписокПередЗагрузкойПользовательскихНастроекНаСервере</name>
+      </handlers>
+      <handlers>
+        <event>OnUpdateUserSettingSetAtServer</event>
+        <name>СписокПриОбновленииСоставаПользовательскихНастроекНаСервере</name>
+      </handlers>
+      <autoRefreshPeriod>60</autoRefreshPeriod>
+      <period>
+        <startDate>0001-01-01T00:00:00</startDate>
+        <endDate>0001-01-01T00:00:00</endDate>
+      </period>
+      <topLevelParent xsi:type="core:UndefinedValue"/>
+      <showRoot>true</showRoot>
+      <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
+      <userSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</userSettingsGroup>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <horizontalAlign>Left</horizontalAlign>
+  </autoCommandBar>
+  <handlers>
+    <event>NotificationProcessing</event>
+    <name>ОбработкаОповещения</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Список</name>
+    <id>1</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>Список.Ссылка</segments>
+    </notDefaultUseAlwaysAttributes>
+    <main>true</main>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Ссылка КАК Ссылка,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Номер КАК Номер,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Дата КАК Дата,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Проведен КАК Проведен,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Ответственный КАК Ответственный,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.НалоговыйПериод КАК НалоговыйПериод,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.РегистрацияВНалоговомОргане КАК РегистрацияВНалоговомОргане,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Организация КАК Организация,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.КодИФНС КАК КодИФНС,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.СпособФормирования КАК СпособФормирования,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Телефон КАК Телефон,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.СправкуПодписал КАК СправкуПодписал,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ДолжностьПодписавшегоЛица КАК ДолжностьПодписавшегоЛица,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Сотрудник КАК Сотрудник,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Фамилия КАК Фамилия,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Имя КАК Имя,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Адрес КАК Адрес,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Отчество КАК Отчество,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ВидДокумента КАК ВидДокумента,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.СерияДокумента КАК СерияДокумента,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.НомерДокумента КАК НомерДокумента,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.АдресЗаРубежом КАК АдресЗаРубежом,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ДатаРождения КАК ДатаРождения,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИНН КАК ИНН,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксИНН КАК ФиксИНН,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксФамилия КАК ФиксФамилия,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксИмя КАК ФиксИмя,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксОтчество КАК ФиксОтчество,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксАдрес КАК ФиксАдрес,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксВидДокумента КАК ФиксВидДокумента,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксСерияДокумента КАК ФиксСерияДокумента,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксНомерДокумента КАК ФиксНомерДокумента,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксГражданство КАК ФиксГражданство,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксДатаРождения КАК ФиксДатаРождения,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксСтатусНалогоплательщика КАК ФиксСтатусНалогоплательщика,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксАдресЗаРубежом КАК ФиксАдресЗаРубежом,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке13 КАК ОбщаяСуммаДоходаПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке13 КАК ОблагаемаяСуммаДоходаПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке13 КАК ИсчисленоПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке13 КАК УдержаноПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке13 КАК ЗадолженностьПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке13 КАК ИзлишнеУдержаноПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке13 КАК ПеречисленоПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке30 КАК ОбщаяСуммаДоходаПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке30 КАК ОблагаемаяСуммаДоходаПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке30 КАК ИсчисленоПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке30 КАК УдержаноПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке30 КАК ЗадолженностьПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке30 КАК ИзлишнеУдержаноПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке30 КАК ПеречисленоПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке9 КАК ОбщаяСуммаДоходаПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке9 КАК ОблагаемаяСуммаДоходаПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке9 КАК ИсчисленоПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке9 КАК УдержаноПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке9 КАК ЗадолженностьПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке9 КАК ИзлишнеУдержаноПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке9 КАК ПеречисленоПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке15 КАК ОбщаяСуммаДоходаПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке15 КАК ОблагаемаяСуммаДоходаПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке15 КАК ИсчисленоПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке15 КАК УдержаноПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке15 КАК ЗадолженностьПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке15 КАК ИзлишнеУдержаноПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке15 КАК ПеречисленоПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке35 КАК ОбщаяСуммаДоходаПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке35 КАК ОблагаемаяСуммаДоходаПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке35 КАК ИсчисленоПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке35 КАК УдержаноПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке35 КАК ЗадолженностьПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке35 КАК ИзлишнеУдержаноПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке35 КАК ПеречисленоПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Гражданство КАК Гражданство,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксНалоги КАК ФиксНалоги,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ФиксУведомление КАК ФиксУведомление,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.СпециальныйДокумент2013года КАК СпециальныйДокумент2013года,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке9 КАК ЗачтеноАвансовыхПлатежейПоСтавке9,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке13 КАК ЗачтеноАвансовыхПлатежейПоСтавке13,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке35 КАК ЗачтеноАвансовыхПлатежейПоСтавке35,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке30 КАК ЗачтеноАвансовыхПлатежейПоСтавке30,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке15 КАК ЗачтеноАвансовыхПлатежейПоСтавке15,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.СтатусНалогоплательщика КАК СтатусНалогоплательщика,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.НомерУведомленияАвансовыеПлатежи КАК НомерУведомленияАвансовыеПлатежи,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ДатаУведомленияАвансовыеПлатежи КАК ДатаУведомленияАвансовыеПлатежи,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.КодНалоговогоОрганаУведомленияАвансовыеПлатежи КАК КодНалоговогоОрганаУведомленияАвансовыеПлатежи,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИННвСтранеГражданства КАК ИННвСтранеГражданства,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Комментарий КАК Комментарий,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке5 КАК ЗачтеноАвансовыхПлатежейПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗачтеноАвансовыхПлатежейПоСтавке10 КАК ЗачтеноАвансовыхПлатежейПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке5 КАК ОбщаяСуммаДоходаПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке5 КАК ОблагаемаяСуммаДоходаПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке5 КАК ИсчисленоПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке5 КАК УдержаноПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке5 КАК ЗадолженностьПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке5 КАК ИзлишнеУдержаноПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке5 КАК ПеречисленоПоСтавке5,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОбщаяСуммаДоходаПоСтавке10 КАК ОбщаяСуммаДоходаПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ОблагаемаяСуммаДоходаПоСтавке10 КАК ОблагаемаяСуммаДоходаПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИсчисленоПоСтавке10 КАК ИсчисленоПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.УдержаноПоСтавке10 КАК УдержаноПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ЗадолженностьПоСтавке10 КАК ЗадолженностьПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ИзлишнеУдержаноПоСтавке10 КАК ИзлишнеУдержаноПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.ПеречисленоПоСтавке10 КАК ПеречисленоПоСтавке10,
+	ДокументСведенияОДоходахСотрудникаДляСоцВыплат.МоментВремени КАК МоментВремени,
+	ВЫБОР
+		КОГДА НаличиеФайлов.ЕстьФайлы ЕСТЬ NULL
+			ТОГДА 0
+		КОГДА НаличиеФайлов.ЕстьФайлы
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ЕстьФайлы
+ИЗ
+	Документ.СведенияОДоходахСотрудникаДляСоцВыплат КАК ДокументСведенияОДоходахСотрудникаДляСоцВыплат
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+		ПО ДокументСведенияОДоходахСотрудникаДляСоцВыплат.Ссылка = НаличиеФайлов.ОбъектСФайлами}</queryText>
+      <mainTable>Document.СведенияОДоходахСотрудникаДляСоцВыплат</mainTable>
+      <dynamicDataRead>true</dynamicDataRead>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке9</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Организация</dataPath>
+        <field>Организация</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке30</dataPath>
+        <field>УдержаноПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ответственный</dataPath>
+        <field>Ответственный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Номер</dataPath>
+        <field>Номер</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке13</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Проведен</dataPath>
+        <field>Проведен</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>АдресЗаРубежом</dataPath>
+        <field>АдресЗаРубежом</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксНомерДокумента</dataPath>
+        <field>ФиксНомерДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Телефон</dataPath>
+        <field>Телефон</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Дата</dataPath>
+        <field>Дата</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДолжностьПодписавшегоЛица</dataPath>
+        <field>ДолжностьПодписавшегоЛица</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалоговыйПериод</dataPath>
+        <field>НалоговыйПериод</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке30</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>РегистрацияВНалоговомОргане</dataPath>
+        <field>РегистрацияВНалоговомОргане</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодИФНС</dataPath>
+        <field>КодИФНС</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке9</dataPath>
+        <field>ПеречисленоПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксГражданство</dataPath>
+        <field>ФиксГражданство</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособФормирования</dataPath>
+        <field>СпособФормирования</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке15</dataPath>
+        <field>ИсчисленоПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СправкуПодписал</dataPath>
+        <field>СправкуПодписал</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке35</dataPath>
+        <field>ЗадолженностьПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке15</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Сотрудник</dataPath>
+        <field>Сотрудник</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке10</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке30</dataPath>
+        <field>ЗадолженностьПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Фамилия</dataPath>
+        <field>Фамилия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтатусНалогоплательщика</dataPath>
+        <field>СтатусНалогоплательщика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке13</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке10</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксСерияДокумента</dataPath>
+        <field>ФиксСерияДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Имя</dataPath>
+        <field>Имя</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке5</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Адрес</dataPath>
+        <field>Адрес</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке15</dataPath>
+        <field>ПеречисленоПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Отчество</dataPath>
+        <field>Отчество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидДокумента</dataPath>
+        <field>ВидДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке15</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке13</dataPath>
+        <field>ПеречисленоПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СерияДокумента</dataPath>
+        <field>СерияДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке15</dataPath>
+        <field>УдержаноПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерДокумента</dataPath>
+        <field>НомерДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаРождения</dataPath>
+        <field>ДатаРождения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИНН</dataPath>
+        <field>ИНН</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксАдрес</dataPath>
+        <field>ФиксАдрес</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксИНН</dataPath>
+        <field>ФиксИНН</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке13</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксФамилия</dataPath>
+        <field>ФиксФамилия</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксОтчество</dataPath>
+        <field>ФиксОтчество</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксИмя</dataPath>
+        <field>ФиксИмя</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксВидДокумента</dataPath>
+        <field>ФиксВидДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке30</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксДатаРождения</dataPath>
+        <field>ФиксДатаРождения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке9</dataPath>
+        <field>ИсчисленоПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке13</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксСтатусНалогоплательщика</dataPath>
+        <field>ФиксСтатусНалогоплательщика</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксАдресЗаРубежом</dataPath>
+        <field>ФиксАдресЗаРубежом</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксУведомление</dataPath>
+        <field>ФиксУведомление</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке13</dataPath>
+        <field>ИсчисленоПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке13</dataPath>
+        <field>УдержаноПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке13</dataPath>
+        <field>ЗадолженностьПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке30</dataPath>
+        <field>ИсчисленоПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке30</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке30</dataPath>
+        <field>ПеречисленоПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке9</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке9</dataPath>
+        <field>УдержаноПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке9</dataPath>
+        <field>ЗадолженностьПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке9</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке15</dataPath>
+        <field>ЗадолженностьПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке15</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке35</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке35</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке35</dataPath>
+        <field>ИсчисленоПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке35</dataPath>
+        <field>УдержаноПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке35</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке35</dataPath>
+        <field>ПеречисленоПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Гражданство</dataPath>
+        <field>Гражданство</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксНалоги</dataPath>
+        <field>ФиксНалоги</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпециальныйДокумент2013года</dataPath>
+        <field>СпециальныйДокумент2013года</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке9</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке35</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке30</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке15</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерУведомленияАвансовыеПлатежи</dataPath>
+        <field>НомерУведомленияАвансовыеПлатежи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДатаУведомленияАвансовыеПлатежи</dataPath>
+        <field>ДатаУведомленияАвансовыеПлатежи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>КодНалоговогоОрганаУведомленияАвансовыеПлатежи</dataPath>
+        <field>КодНалоговогоОрганаУведомленияАвансовыеПлатежи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИННвСтранеГражданства</dataPath>
+        <field>ИННвСтранеГражданства</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Комментарий</dataPath>
+        <field>Комментарий</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке5</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке5</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке5</dataPath>
+        <field>ИсчисленоПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке5</dataPath>
+        <field>УдержаноПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке5</dataPath>
+        <field>ЗадолженностьПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке5</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке5</dataPath>
+        <field>ПеречисленоПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке10</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке10</dataPath>
+        <field>ИсчисленоПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке10</dataPath>
+        <field>УдержаноПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке10</dataPath>
+        <field>ЗадолженностьПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке10</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке10</dataPath>
+        <field>ПеречисленоПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МоментВремени</dataPath>
+        <field>МоментВремени</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕстьФайлы</dataPath>
+        <field>ЕстьФайлы</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Есть файлы</value>
+            </content>
+            <content>
+              <key>en</key>
+              <value>Has files</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке3</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке12</dataPath>
+        <field>УдержаноПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке3</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке6</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке3</dataPath>
+        <field>ПеречисленоПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке3</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке3</dataPath>
+        <field>ЗадолженностьПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке3</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке12</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке3</dataPath>
+        <field>ИсчисленоПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке7</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке3</dataPath>
+        <field>УдержаноПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ДополнительныеРеквизиты</dataPath>
+        <field>ДополнительныеРеквизиты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке6</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке6</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке15</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке6</dataPath>
+        <field>ИсчисленоПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке10</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке6</dataPath>
+        <field>УдержаноПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке6</dataPath>
+        <field>ЗадолженностьПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке6</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке35</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке6</dataPath>
+        <field>ПеречисленоПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке10</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке10</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке7</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке7</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдалитьСуммыНалогов</dataPath>
+        <field>УдалитьСуммыНалогов</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке12</dataPath>
+        <field>ПеречисленоПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке7</dataPath>
+        <field>ИсчисленоПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УдержаноПоСтавке7</dataPath>
+        <field>УдержаноПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке7</dataPath>
+        <field>ЗадолженностьПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СведенияОДоходах</dataPath>
+        <field>СведенияОДоходах</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке7</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПеречисленоПоСтавке7</dataPath>
+        <field>ПеречисленоПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗачтеноАвансовыхПлатежейПоСтавке12</dataPath>
+        <field>ЗачтеноАвансовыхПлатежейПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке5</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОбщаяСуммаДоходаПоСтавке12</dataPath>
+        <field>ОбщаяСуммаДоходаПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОблагаемаяСуммаДоходаПоСтавке12</dataPath>
+        <field>ОблагаемаяСуммаДоходаПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке9</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИсчисленоПоСтавке12</dataPath>
+        <field>ИсчисленоПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке30</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЗадолженностьПоСтавке12</dataPath>
+        <field>ЗадолженностьПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке6</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке15</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке15</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИзлишнеУдержаноПоСтавке12</dataPath>
+        <field>ИзлишнеУдержаноПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СтранаВыдачиДокумента</dataPath>
+        <field>СтранаВыдачиДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке7</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ФиксСтранаВыдачиДокумента</dataPath>
+        <field>ФиксСтранаВыдачиДокумента</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке13</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке30</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке30</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке9</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке9</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке5</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке5</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке3</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке6</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке6</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке3</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке3</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаДоходаНеудержанногоПоСтавке12</dataPath>
+        <field>СуммаДоходаНеудержанногоПоСтавке12</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке13</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке13</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке35</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке35</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>УведомленияНОоПравеНаВычеты</dataPath>
+        <field>УведомленияНОоПравеНаВычеты</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НалогНаПрибыльДляДивидендовПоСтавке7</dataPath>
+        <field>НалогНаПрибыльДляДивидендовПоСтавке7</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ОснованиеПодписи</dataPath>
+        <field>ОснованиеПодписи</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СведенияОВычетах</dataPath>
+        <field>СведенияОВычетах</field>
+      </fields>
+    </extInfo>
+  </attributes>
+  <attributes>
+    <name>ПараметрыПодключаемыхКоманд</name>
+    <id>2</id>
+    <valueType/>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:DynamicListFormExtInfo"/>
+</form:Form>
